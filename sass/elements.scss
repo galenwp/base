@@ -112,3 +112,10 @@ hr {
     color: black;
   }
 }
+
+.circle {
+  display: inline-block;
+  border-radius: 50%;
+  padding: 2rem;
+  vertical-align: middle;
+}

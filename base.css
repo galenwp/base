@@ -937,59 +937,151 @@ pre,
 code {
   font-family: "Source Code Pro", "Roboto Mono", "Courier New", monospace; }
 
+pre,
 code {
   background-color: #f1f1f1;
   padding: 1rem; }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 0;
   font-weight: 600;
   font-family: "Work Sans";
   color: #373A3C; }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 8rem;
   line-height: 10rem;
   margin: 24px 0; }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 6rem;
   line-height: 8rem;
   margin: 12px 0; }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: 24px;
   line-height: 6rem;
   margin: 12px 0; }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: 3rem;
   line-height: 5rem;
   margin: 6px 0; }
 
-h5, .h5 {
+h5,
+.h5 {
   font-size: 3rem;
   line-height: 4rem;
   font-weight: 500; }
 
+.text-heading {
+  font-family: "Work Sans"; }
+
+.text-code,
 .text-mono {
-  font-family: "Roboto mono", monospace; }
+  font-family: "Source Code Pro", "Roboto mono", "Courier New", monospace; }
 
 .text-code {
-  font-family: "Roboto mono", monospace;
   background-color: #F4F4F4; }
 
-.text-blue {
+.text-xs {
+  font-size: 1.5rem; }
+
+.text-sm {
+  font-size: 2rem; }
+
+.text-lh-xs {
+  line-height: 2rem; }
+
+.text-lh-sm {
+  line-height: 3rem; }
+
+.text-300 {
+  font-weight: 300; }
+
+.text-400 {
+  font-weight: 400; }
+
+.text-500 {
+  font-weight: 500; }
+
+.text-600 {
+  font-weight: 600; }
+
+.text-700 {
+  font-weight: 700; }
+
+.text-800 {
+  font-weight: 800; }
+
+/* colors */
+.blue {
   color: #577CFF; }
 
-.text-green {
+.green {
   color: #8FEE9D; }
 
-.text-light {
+.red {
+  color: #FF4444; }
+
+.gray-lighter {
+  color: #f1f1f1; }
+
+.gray-light {
   color: #D4D4D4; }
 
-.highlight-blue {
-  background-color: #577CFF; }
+.gray {
+  color: #5B5B5B; }
+
+.gray-dark {
+  color: #373A3C; }
+
+.blue-hl {
+  background-color: #577CFF;
+  color: #fff; }
+
+.green-hl {
+  background-color: #8FEE9D;
+  color: #fff; }
+
+.red-hl {
+  background-color: #FF4444;
+  color: #fff; }
+
+.gray-lighter-hl {
+  background-color: #f1f1f1;
+  color: #fff; }
+
+.gray-light-hl {
+  background-color: #D4D4D4;
+  color: #fff; }
+
+.gray-hl {
+  background-color: #5B5B5B;
+  color: #fff; }
+
+.gray-dark-hl {
+  background-color: #373A3C;
+  color: #fff; }
+
+.black-hl {
+  background-color: #000;
+  color: #fff; }
+
+/* alignment */
+.center {
+  text-align: center; }
+
+.right {
+  text-align: right; }
 
 @media (min-width: 960px) {
   .container {
@@ -1219,6 +1311,12 @@ hr {
   border-color: black; }
   .urbit-logo-solid:before {
     color: black; }
+
+.circle {
+  display: inline-block;
+  border-radius: 50%;
+  padding: 2rem;
+  vertical-align: middle; }
 
 * {
   box-sizing: border-box; }
