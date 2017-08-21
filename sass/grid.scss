@@ -562,6 +562,18 @@ $lg-viewport: "only screen and (min-width: 960px)";  // computer, regular
   Width utility classes
 */
 
+.w2 {
+  width: 2rem; // 12px
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.w4 {
+  width: 4rem; // 24px
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .w8 {
   width: 8rem; // 48px
   margin-left: 1rem;
@@ -576,6 +588,12 @@ $lg-viewport: "only screen and (min-width: 960px)";  // computer, regular
 
 .w32 {
   width: 32rem; // 192px
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.w64 {
+  width: 64rem; // 384px
   margin-left: 1rem;
   margin-right: 1rem;
 }

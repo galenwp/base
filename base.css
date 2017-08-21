@@ -734,6 +734,16 @@ th {
 /*
   Width utility classes
 */
+.w2 {
+  width: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem; }
+
+.w4 {
+  width: 4rem;
+  margin-left: 1rem;
+  margin-right: 1rem; }
+
 .w8 {
   width: 8rem;
   margin-left: 1rem;
@@ -746,6 +756,11 @@ th {
 
 .w32 {
   width: 32rem;
+  margin-left: 1rem;
+  margin-right: 1rem; }
+
+.w64 {
+  width: 64rem;
   margin-left: 1rem;
   margin-right: 1rem; }
 
@@ -800,7 +815,7 @@ h2,
 
 h3,
 .h3 {
-  font-size: 24px;
+  font-size: 4rem;
   line-height: 6rem;
   margin: 12px 0; }
 

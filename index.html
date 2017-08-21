@@ -10,217 +10,224 @@
 
 <body>
   <div class="container">
-    <article>
+    <article class="row">
+      <div class="col-md-offset-1 col-md-10">
+        <section class="mb16">
+          <h1>Base dot css</h1>
+          <p><code>base.css</code> is the base stylesheet for <a href="https://urbit.org">Urbit</a>.  </p>
+          <p>Oh blimey. We all met at university, we all went to Leeds together. We were on different courses, but there was a student television station there, which we all became involved in in various capacities. We started making little TV shows together that nobody watched, but it was really good experience as far as writing scripts, editing, filming. Alice and I did a bit of presenting. After that, we very quickly moved down to London, and we all worked together for our first job. We've stayed here ever since and remained friends.</p>
+        </section>
 
-    <section class="mb16">
-      <h1>Base dot css</h1>
-      <p><code>base.css</code> is the base stylesheet for <a href="https://urbit.org">Urbit</a>.  </p>
-      <p>Oh blimey. We all met at university, we all went to Leeds together. We were on different courses, but there was a student television station there, which we all became involved in in various capacities. We started making little TV shows together that nobody watched, but it was really good experience as far as writing scripts, editing, filming. Alice and I did a bit of presenting. After that, we very quickly moved down to London, and we all worked together for our first job. We've stayed here ever since and remained friends.</p>
-    </section>
+        <section class="mb16">
+          <h2>Layout and grids</h2>
+          <p>There is a certain glibness in calling someone a legend, but if there's any artist worthy of the title it's Barbara Hammer, whose nearly 50-year career has spanned disciplines and broken boundaries, but has focused most especially on moving images. </p>
 
-    <section class="mb16">
-      <h2>Layout and grids</h2>
-      <p>There is a certain glibness in calling someone a legend, but if there's any artist worthy of the title it's Barbara Hammer, whose nearly 50-year career has spanned disciplines and broken boundaries, but has focused most especially on moving images. </p>
+          <h3 class="mb4">Simple, percent-based grid</h3>
+          <div class="row mb1">
+            <div class="col-sm-2">
+              <div class="black-hl text-sm text-mono text-500 center">2</div>
+            </div>
+            <div class="col-sm-7">
+              <div class="black-hl text-sm text-mono text-500 center">7</div>
+            </div>
+            <div class="col-sm-3">
+              <div class="black-hl text-sm text-mono text-500 center">3</div>
+            </div>
+          </div>
 
-      <h3 class="mb4">Simple, percent-based grid</h3>
-      <div class="row mb1">
-        <div class="col-sm-2">
-          <div class="black-hl text-sm text-mono text-500 center">2</div>
-        </div>
-        <div class="col-sm-7">
-          <div class="black-hl text-sm text-mono text-500 center">7</div>
-        </div>
-        <div class="col-sm-3">
-          <div class="black-hl text-sm text-mono text-500 center">3</div>
-        </div>
+          <div class="row mb1">
+            <div class="col-sm-4">
+              <div class="black-hl text-sm text-mono text-500 center">4</div>
+            </div>
+            <div class="col-sm-4">
+              <div class="black-hl text-sm text-mono text-500 center">4</div>
+            </div>
+            <div class="col-sm-4">
+              <div class="black-hl text-sm text-mono text-500 center">4</div>
+            </div>
+          </div>
+
+          <div class="row mb1">
+            <div class="col-sm-9">
+              <div class="black-hl text-sm text-mono text-500 center">9</div>
+            </div>
+            <div class="col-sm-2">
+              <div class="black-hl text-sm text-mono text-500 center">2</div>
+            </div>
+            <div class="col-sm-1">
+              <div class="black-hl text-sm text-mono text-500 center">1</div>
+            </div>
+          </div>
+
+          <h4 class="mb4">With breakpoints</h4>
+          <div class="row mb1">
+            <div class="col-sm">
+              <div class="black-hl text-sm text-mono text-500 center">sm</div>
+            </div>
+            <div class="col-sm">
+              <div class="black-hl text-sm text-mono text-500 center">sm</div>
+            </div>
+            <div class="col-sm">
+              <div class="black-hl text-sm text-mono text-500 center">sm</div>
+            </div>
+            <div class="col-sm">
+              <div class="black-hl text-sm text-mono text-500 center">sm</div>
+            </div>
+          </div>
+
+          <div class="row mb1">
+            <div class="col-md-6 col-lg-4">
+              <div class="black-hl text-sm text-mono text-500 center">md6, lg4</div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="black-hl text-sm text-mono text-500 center">md6, lg4</div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="black-hl text-sm text-mono text-500 center">md6, lg4</div>
+            </div>
+          </div>
+
+          <div class="row mb8">
+            <div class="col-lg-9">
+              <div class="black-hl text-sm text-mono text-500 center">lg9</div>
+            </div>
+            <div class="col-lg-offset-1 col-lg-2">
+              <div class="black-hl text-sm text-mono text-500 center">offset1, lg2</div>
+            </div>
+          </div>
+
+          <h3>Fixed width utilities</h3>
+          <p class="mb4">Hammer was raised in Hollywood, California. It wasn't until her early thirties that she left her husband, came out as lesbian, and, inspired by the experimental filmmaker Maya Deren, began making short, scintillating films of her own.</p>
+          <div class="row mb1">
+            <div class="w8 black-hl text-sm text-mono text-500 center">8</div>
+            <div class="w8 black-hl text-sm text-mono text-500 center">8</div>
+            <div class="w8 black-hl text-sm text-mono text-500 center">8</div>
+          </div>
+
+          <div class="row mb1">
+            <div class="w16 black-hl text-sm text-mono text-500 center">16</div>
+            <div class="w16 black-hl text-sm text-mono text-500 center">16</div>
+            <div class="w16 black-hl text-sm text-mono text-500 center">16</div>
+          </div>
+
+          <div class="row mb1">
+            <div class="w32 black-hl text-sm text-mono text-500 center mb2">32</div>
+            <div class="w32 black-hl text-sm text-mono text-500 center mb2">32</div>
+            <div class="w32 black-hl text-sm text-mono text-500 center mb2">32</div>
+          </div>
+
+          <div class="row mb1">
+            <div class="w64 black-hl text-sm text-mono text-500 center mb2">64</div>
+            <div class="w64 black-hl text-sm text-mono text-500 center mb2">64</div>
+            <div class="w64 black-hl text-sm text-mono text-500 center mb2">64</div>
+          </div>
+
+          <h4>Code —</h4>
+          <pre class="text-sm"><code>&#x3C;div class=&#x22;row mb2&#x22;&#x3E;
+      &#x3C;div class=&#x22;w8 black-hl text-sm text-mono text-500 center&#x22;&#x3E;48&#x3C;/div&#x3E;
+      &#x3C;div class=&#x22;w8 black-hl text-sm text-mono text-500 center&#x22;&#x3E;48&#x3C;/div&#x3E;
+      &#x3C;div class=&#x22;w8 black-hl text-sm text-mono text-500 center&#x22;&#x3E;48&#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;row mb2&#x22;&#x3E;
+      &#x3C;div class=&#x22;w16 black-hl text-sm text-mono text-500 center&#x22;&#x3E;96&#x3C;/div&#x3E;
+      &#x3C;div class=&#x22;w16 black-hl text-sm text-mono text-500 center&#x22;&#x3E;96&#x3C;/div&#x3E;
+      &#x3C;div class=&#x22;w16 black-hl text-sm text-mono text-500 center&#x22;&#x3E;96&#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;row mb8&#x22;&#x3E;
+      &#x3C;div class=&#x22;w32 black-hl text-sm text-mono text-500 center mb2&#x22;&#x3E;192&#x3C;/div&#x3E;
+      &#x3C;div class=&#x22;w32 black-hl text-sm text-mono text-500 center mb2&#x22;&#x3E;192&#x3C;/div&#x3E;
+      &#x3C;div class=&#x22;w32 black-hl text-sm text-mono text-500 center mb2&#x22;&#x3E;192&#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;</code></pre>
+
+        </section>
+
+        <section class="mb16">
+          <h2>Typography</h2>
+
+          <p>To maintain a pleasing vertical rhythym, Urbit's typographic baseline (and all other elements) are sized as multiples of <strong>6px</strong>. This is also the base font-size, supporting easy REM styling. We've included defaults to make arbitrary arrangements of Markdown components to work cohesively. Additionally, all Typographic elements in elements are equipped with weapons-grade retro encabulators, to support dual marzel veins and prevent side-fumbling. </p>
+
+          <div class="mb6">
+            <h1>Why painting? </h1>
+            <h2>Why painting?</h2>
+            <h3>Why painting?</h3>
+            <h4>Why painting?</h4>
+            <h5>Why painting?</h5>
+          </div>
+
+          <h4>Code —</h4>
+          <pre class="text-sm mb8"><code>&#x3C;h1&#x3E;Heading one&#x3C;/h1&#x3E;
+    &#x3C;h2&#x3E;Heading two&#x3C;/h2&#x3E;
+    &#x3C;h3&#x3E;Heading three&#x3C;/h3&#x3E;
+    &#x3C;h4&#x3E;Heading four&#x3C;/h4&#x3E;
+    &#x3C;h5&#x3E;Heading five&#x3C;/h5&#x3E;</code></pre>
+
+          <p>This summer, ahead of the Leslie-Lohman show, Interview spoke with Hammer about the places she lives, the art she makes, and what it takes to fill, as she calls it, the blank screen.</p>
+
+          <h4>Code —</h4>
+          <pre class="text-sm mb8"><code>&#x3C;p&#x3E;This summer, ahead of the Leslie-Lohman show, Interview spoke with Hammer about the places she lives, the art she makes, and what it takes to fill, as she calls it, the blank screen.&#x3C;/p&#x3E;</code></pre>
+
+          <p>There's lots of reading, of course. <em>Interviewing people.</em> Getting permission to shoot them — <b>oh my God</b>, is that <u>hard</u>. Some people won't sign the release after you set up everything for an interview. People will say, "You shouldn't be making this film."</p>
+
+          <h4>Code —</h4>
+          <pre class="text-sm mb8"><code>&#x3C;p&#x3E;There&#x27;s lots of reading, of course. &#x3C;em&#x3E;Interviewing people.&#x3C;/em&#x3E; Getting permission to shoot them &#x2014; &#x3C;b&#x3E;oh my God&#x3C;/b&#x3E;, is that &#x3C;u&#x3E;hard&#x3C;/u&#x3E;. Some people won&#x27;t sign the release after you set up everything for an interview. People will say, &#x22;You shouldn&#x27;t be making this film.&#x22;&#x3C;/p&#x3E;</code></pre>
+        </section>
+
+        <section>
+          <h3>Buttons</h3>
+          <button class="btn">Serious action</button>
+          <button class="btn btn-primary">Serious action</button>
+          <button class="btn btn-secondary">Serious action</button>
+          <button class="btn btn-tetiary">Serious action</button>
+          <button class="btn btn-warning">Serious action</button>
+
+          <h3>Button groups</h3>
+          <div class="btn-group">
+            <button type="button" class="btn btn-secondary active">Active</button>
+            <button type="button" class="btn btn-tetiary">Inactive</button>
+          </div>
+          <div class="btn-group">
+            <button type="button" class="btn btn-secondary">Active</button>
+            <button type="button" class="btn btn-tetiary active">Inactive</button>
+          </div>
+          <h3>Forms</h3>
+          <div class="input-group">
+            <label>Name</label>
+            <input type="text" />
+          </div>
+          <div class="input-group error">
+            <label>Age</label>
+            <input type="text" value="John" />
+            <div class="error-label">Age must be a number.</div>
+          </div>
+          <div class="input-group">
+            <label>Message</label>
+            <textarea rows="6"></textarea>
+          </div>
+          <button type="submit" class="btn btn-secondary">Send</button>
+        </section>
+
+        <section class="mb16">
+          <pre class="code-block"><code class="code-text">
+    ++  watch-dir
+    |=  a/path
+    ^-  (list move)
+    =/  soc/sock
+    [our.hid our.hid]
+    =/  rav/rave
+    [%next %z da+now.hid a]
+    =/  rif/riff
+    [%home [~ rav]]
+    =/  car/card
+    :^
+    %warp
+    a
+    soc
+    rif
+    [[ost.hid car] ~]
+          </code></pre>
+        </section>
       </div>
-
-      <div class="row mb1">
-        <div class="col-sm-4">
-          <div class="black-hl text-sm text-mono text-500 center">4</div>
-        </div>
-        <div class="col-sm-4">
-          <div class="black-hl text-sm text-mono text-500 center">4</div>
-        </div>
-        <div class="col-sm-4">
-          <div class="black-hl text-sm text-mono text-500 center">4</div>
-        </div>
-      </div>
-
-      <div class="row mb1">
-        <div class="col-sm-9">
-          <div class="black-hl text-sm text-mono text-500 center">9</div>
-        </div>
-        <div class="col-sm-2">
-          <div class="black-hl text-sm text-mono text-500 center">2</div>
-        </div>
-        <div class="col-sm-1">
-          <div class="black-hl text-sm text-mono text-500 center">1</div>
-        </div>
-      </div>
-
-      <h4 class="mb4">With breakpoints</h4>
-      <div class="row mb1">
-        <div class="col-sm">
-          <div class="black-hl text-sm text-mono text-500 center">sm</div>
-        </div>
-        <div class="col-sm">
-          <div class="black-hl text-sm text-mono text-500 center">sm</div>
-        </div>
-        <div class="col-sm">
-          <div class="black-hl text-sm text-mono text-500 center">sm</div>
-        </div>
-        <div class="col-sm">
-          <div class="black-hl text-sm text-mono text-500 center">sm</div>
-        </div>
-      </div>
-
-      <div class="row mb1">
-        <div class="col-md-6 col-lg-4">
-          <div class="black-hl text-sm text-mono text-500 center">md6, lg4</div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="black-hl text-sm text-mono text-500 center">md6, lg4</div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="black-hl text-sm text-mono text-500 center">md6, lg4</div>
-        </div>
-      </div>
-
-      <div class="row mb8">
-        <div class="col-lg-9">
-          <div class="black-hl text-sm text-mono text-500 center">lg9</div>
-        </div>
-        <div class="col-lg-offset-1 col-lg-2">
-          <div class="black-hl text-sm text-mono text-500 center">offset1, lg2</div>
-        </div>
-      </div>
-
-      <h3>Fixed width utilities</h3>
-      <p class="mb4">Hammer was raised in Hollywood, California. It wasn't until her early thirties that she left her husband, came out as lesbian, and, inspired by the experimental filmmaker Maya Deren, began making short, scintillating films of her own.</p>
-      <div class="row mb1">
-        <div class="w8 black-hl text-sm text-mono text-500 center">48</div>
-        <div class="w8 black-hl text-sm text-mono text-500 center">48</div>
-        <div class="w8 black-hl text-sm text-mono text-500 center">48</div>
-      </div>
-
-      <div class="row mb1">
-        <div class="w16 black-hl text-sm text-mono text-500 center">96</div>
-        <div class="w16 black-hl text-sm text-mono text-500 center">96</div>
-        <div class="w16 black-hl text-sm text-mono text-500 center">96</div>
-      </div>
-
-      <div class="row mb1">
-        <div class="w32 black-hl text-sm text-mono text-500 center mb2">192</div>
-        <div class="w32 black-hl text-sm text-mono text-500 center mb2">192</div>
-        <div class="w32 black-hl text-sm text-mono text-500 center mb2">192</div>
-      </div>
-
-      <h4>Code —</h4>
-      <pre class="text-sm"><code>&#x3C;div class=&#x22;row mb2&#x22;&#x3E;
-  &#x3C;div class=&#x22;w8 black-hl text-sm text-mono text-500 center&#x22;&#x3E;48&#x3C;/div&#x3E;
-  &#x3C;div class=&#x22;w8 black-hl text-sm text-mono text-500 center&#x22;&#x3E;48&#x3C;/div&#x3E;
-  &#x3C;div class=&#x22;w8 black-hl text-sm text-mono text-500 center&#x22;&#x3E;48&#x3C;/div&#x3E;
-&#x3C;/div&#x3E;
-&#x3C;div class=&#x22;row mb2&#x22;&#x3E;
-  &#x3C;div class=&#x22;w16 black-hl text-sm text-mono text-500 center&#x22;&#x3E;96&#x3C;/div&#x3E;
-  &#x3C;div class=&#x22;w16 black-hl text-sm text-mono text-500 center&#x22;&#x3E;96&#x3C;/div&#x3E;
-  &#x3C;div class=&#x22;w16 black-hl text-sm text-mono text-500 center&#x22;&#x3E;96&#x3C;/div&#x3E;
-&#x3C;/div&#x3E;
-&#x3C;div class=&#x22;row mb8&#x22;&#x3E;
-  &#x3C;div class=&#x22;w32 black-hl text-sm text-mono text-500 center mb2&#x22;&#x3E;192&#x3C;/div&#x3E;
-  &#x3C;div class=&#x22;w32 black-hl text-sm text-mono text-500 center mb2&#x22;&#x3E;192&#x3C;/div&#x3E;
-  &#x3C;div class=&#x22;w32 black-hl text-sm text-mono text-500 center mb2&#x22;&#x3E;192&#x3C;/div&#x3E;
-&#x3C;/div&#x3E;</code></pre>
-
-    </section>
-
-    <section class="mb16">
-      <h2>Typography</h2>
-
-      <p>To maintain a pleasing vertical rhythym, Urbit's typographic baseline (and all other elements) are sized as multiples of <strong>6px</strong>. This is also the base font-size, supporting easy REM styling. We've included defaults to make arbitrary arrangements of Markdown components to work cohesively. Additionally, all Typographic elements in elements are equipped with weapons-grade retro encabulators, to support dual marzel veins and prevent side-fumbling. </p>
-
-      <div class="mb6">
-        <h1>Why painting? </h1>
-        <h2>Why painting?</h2>
-        <h3>Why painting?</h3>
-        <h4>Why painting?</h4>
-        <h5>Why painting?</h5>
-      </div>
-
-      <h4>Code —</h4>
-      <pre class="text-sm mb8"><code>&#x3C;h1&#x3E;Heading one&#x3C;/h1&#x3E;
-&#x3C;h2&#x3E;Heading two&#x3C;/h2&#x3E;
-&#x3C;h3&#x3E;Heading three&#x3C;/h3&#x3E;
-&#x3C;h4&#x3E;Heading four&#x3C;/h4&#x3E;
-&#x3C;h5&#x3E;Heading five&#x3C;/h5&#x3E;</code></pre>
-
-      <p>This summer, ahead of the Leslie-Lohman show, Interview spoke with Hammer about the places she lives, the art she makes, and what it takes to fill, as she calls it, the blank screen.</p>
-
-      <h4>Code —</h4>
-      <pre class="text-sm mb8"><code>&#x3C;p&#x3E;This summer, ahead of the Leslie-Lohman show, Interview spoke with Hammer about the places she lives, the art she makes, and what it takes to fill, as she calls it, the blank screen.&#x3C;/p&#x3E;</code></pre>
-
-      <p>There's lots of reading, of course. <em>Interviewing people.</em> Getting permission to shoot them — <b>oh my God</b>, is that <u>hard</u>. Some people won't sign the release after you set up everything for an interview. People will say, "You shouldn't be making this film."</p>
-
-      <h4>Code —</h4>
-      <pre class="text-sm mb8"><code>&#x3C;p&#x3E;There&#x27;s lots of reading, of course. &#x3C;em&#x3E;Interviewing people.&#x3C;/em&#x3E; Getting permission to shoot them &#x2014; &#x3C;b&#x3E;oh my God&#x3C;/b&#x3E;, is that &#x3C;u&#x3E;hard&#x3C;/u&#x3E;. Some people won&#x27;t sign the release after you set up everything for an interview. People will say, &#x22;You shouldn&#x27;t be making this film.&#x22;&#x3C;/p&#x3E;</code></pre>
-    </section>
-
-    <section>
-      <h3>Buttons</h3>
-      <button class="btn">Serious action</button>
-      <button class="btn btn-primary">Serious action</button>
-      <button class="btn btn-secondary">Serious action</button>
-      <button class="btn btn-tetiary">Serious action</button>
-      <button class="btn btn-warning">Serious action</button>
-
-      <h3>Button groups</h3>
-      <div class="btn-group">
-        <button type="button" class="btn btn-secondary active">Active</button>
-        <button type="button" class="btn btn-tetiary">Inactive</button>
-      </div>
-      <div class="btn-group">
-        <button type="button" class="btn btn-secondary">Active</button>
-        <button type="button" class="btn btn-tetiary active">Inactive</button>
-      </div>
-      <h3>Forms</h3>
-      <div class="input-group">
-        <label>Name</label>
-        <input type="text" />
-      </div>
-      <div class="input-group error">
-        <label>Age</label>
-        <input type="text" value="John" />
-        <div class="error-label">Age must be a number.</div>
-      </div>
-      <div class="input-group">
-        <label>Message</label>
-        <textarea rows="6"></textarea>
-      </div>
-      <button type="submit" class="btn btn-secondary">Send</button>
-    </section>
-
-    <section class="mb16">
-      <pre class="code-block"><code class="code-text">
-++  watch-dir
-|=  a/path
-^-  (list move)
-=/  soc/sock
-[our.hid our.hid]
-=/  rav/rave
-[%next %z da+now.hid a]
-=/  rif/riff
-[%home [~ rav]]
-=/  car/card
-:^
-%warp
-a
-soc
-rif
-[[ost.hid car] ~]
-      </code></pre>
-    </section>
-  </article>
-</div>
+    </article>
+  </div>
 </body>
 </html>
