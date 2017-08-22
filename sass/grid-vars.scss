@@ -1,0 +1,35 @@
+// Golden rule: 6px = 1rem
+
+$gutter: 1rem;
+$halfgutter: .5rem;
+
+$viewport-sm-up: "only screen and (min-width: 0)";  // mobile, portrait + landscape
+$viewport-md-up: "only screen and (min-width: 480px)";  // tablet, portrait + landscape
+$viewport-lg-up: "only screen and (min-width: 960px)";  // computer, regular
+
+$viewport-sm: "only screen and (min-width: 0) and (max-width: 480px)";
+$viewport-md: "only screen and (min-width: 480px) and (max-width: 960px)";
+$viewport-lg: "only screen and (min-width: 960px) and (max-width: 9999px)";
+
+
+/*
+  Fluid-to-fixed conversions at standard screen sizes:
+
+  iPhone (portrait) 320px:
+      - columns:          18px * 12 = 216px       // width: 3
+      - gutter:           6px  * 11 = 66px
+      - outer padding:    18px * 2  = 36px
+                                    = 318px
+
+  iPad (portrait) 768px:
+      - columns:          54px * 12 = 648px       // width: 9
+      - gutter:           6px  * 11 = 66px
+      - outer padding:    24px * 2  = 48px
+                                    = 762px
+
+  regular 960px:
+      - columns:          72px * 12 = 864px       // width: 12
+      - gutter:           6px  * 11 = 66px
+      - outer padding:    18px * 2  = 36px
+                                    = 966px
+*/

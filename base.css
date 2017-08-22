@@ -387,13 +387,14 @@ th {
   max-width: 960px; }
 
 .row {
-  box-sizing: border-box;
   display: flex;
-  flex: 0 1 auto;
-  flex-direction: row;
   flex-wrap: wrap;
   margin-right: -0.5rem;
   margin-left: -0.5rem; }
+
+.flex {
+  display: flex;
+  flex-wrap: wrap; }
 
 @media only screen and (min-width: 0) {
   .col-sm,
@@ -683,88 +684,11 @@ th {
   .col-lg-offset-11 {
     margin-left: 91.66666667%; } }
 
-/*
-  margin spacing utility classes
-*/
-.m0 {
-  margin: 0; }
-
-.mt2 {
-  margin-top: 2rem; }
-
-.mt8 {
-  margin-top: 8rem; }
-
-.mb0 {
-  margin-bottom: 0; }
-
-.mb1 {
-  margin-bottom: 1rem; }
-
-.mb2 {
-  margin-bottom: 2rem; }
-
-.mb3 {
-  margin-bottom: 3rem; }
-
-.mb4 {
-  margin-bottom: 4rem; }
-
-.mb5 {
-  margin-bottom: 5rem; }
-
-.mb6 {
-  margin-bottom: 6rem; }
-
-.mb7 {
-  margin-bottom: 7rem; }
-
-.mb8 {
-  margin-bottom: 8rem; }
-
-.mb9 {
-  margin-bottom: 9rem; }
-
-.mb10 {
-  margin-bottom: 10rem; }
-
-.mb16 {
-  margin-bottom: 16rem; }
-
-/*
-  Width utility classes
-*/
-.w2 {
-  width: 2rem;
-  margin-left: 1rem;
-  margin-right: 1rem; }
-
-.w4 {
-  width: 4rem;
-  margin-left: 1rem;
-  margin-right: 1rem; }
-
-.w8 {
-  width: 8rem;
-  margin-left: 1rem;
-  margin-right: 1rem; }
-
-.w16 {
-  width: 16rem;
-  margin-left: 1rem;
-  margin-right: 1rem; }
-
-.w32 {
-  width: 32rem;
-  margin-left: 1rem;
-  margin-right: 1rem; }
-
-.w64 {
-  width: 64rem;
-  margin-left: 1rem;
-  margin-right: 1rem; }
-
+/**********************
+  Base text styles
+**********************/
 * {
+  font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased; }
 
 html {
@@ -782,20 +706,15 @@ a {
 p {
   margin: 0 0 2rem; }
 
-pre,
-code {
-  font-family: "Source Code Pro", "Roboto Mono", "Courier New", monospace; }
-
-pre,
-code {
-  background-color: #f1f1f1;
-  padding: 1rem; }
-
+/**********************
+  Headings
+**********************/
 h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+.text-heading {
   margin: 0;
   font-weight: 600;
   font-family: "Work Sans";
@@ -831,17 +750,35 @@ h5,
   line-height: 4rem;
   font-weight: 500; }
 
-.text-heading {
-  font-family: "Work Sans"; }
+/**********************
+  Preformatted
+**********************/
+pre,
+code {
+  background-color: #f1f1f1;
+  padding: 1rem; }
 
+pre,
+code,
 .text-code,
 .text-mono {
   font-family: "Source Code Pro", "Roboto mono", "Courier New", monospace; }
 
 .text-code {
-  background-color: #F4F4F4;
+  background-color: #f1f1f1;
   color: black; }
 
+.code-block {
+  background-color: #F4F4F4;
+  padding: 12px;
+  white-space: pre-wrap; }
+
+.code-block .text-code {
+  font-weight: 200; }
+
+/**********************
+  Text sizes
+**********************/
 .text-xs {
   font-size: 1.5rem; }
 
@@ -854,25 +791,45 @@ h5,
 .text-lh-sm {
   line-height: 3rem; }
 
-.text-300 {
+/**********************
+  Formatting
+**********************/
+u, .underline {
+  text-decoration: underline; }
+
+s, .strikethrough {
+  text-decoration: line-through; }
+
+em, .italics {
+  font-style: italic; }
+
+.capitalize {
+  text-transform: capitalize; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.bold-300 {
   font-weight: 300; }
 
-.text-400 {
+.bold-400 {
   font-weight: 400; }
 
-.text-500 {
+.bold-500 {
   font-weight: 500; }
 
-.text-600 {
+.bold-600 {
   font-weight: 600; }
 
-.text-700 {
+b, .bold-700 {
   font-weight: 700; }
 
-.text-800 {
+.bold-800 {
   font-weight: 800; }
 
-/* colors */
+/**********************
+  Colors
+**********************/
 .blue {
   color: #577CFF; }
 
@@ -926,13 +883,18 @@ h5,
   background-color: #000;
   color: #fff; }
 
-/* alignment */
+/**********************
+  Alignment
+**********************/
 .center {
   text-align: center; }
 
 .right {
   text-align: right; }
 
+/**********************
+  Buttons
+**********************/
 button {
   border: none;
   outline: none; }
@@ -989,6 +951,9 @@ input[type="text"] {
 .input-group.error .error-label {
   display: block; }
 
+/**********************
+  Base elements
+**********************/
 section {
   margin: 0 0 2rem;
   border: none; }
@@ -999,11 +964,15 @@ blockquote {
   padding-left: 18px; }
 
 hr {
+  margin: 4rem 0;
   width: 100%;
   height: 1rem;
   border: 0;
-  background-color: #000; }
+  background-color: #373A3C; }
 
+/**********************
+  Lists
+**********************/
 ul {
   padding-left: 28px;
   list-style: disc outside; }
@@ -1022,20 +991,26 @@ ul ol {
   ul ol li {
     margin-bottom: 6px; }
 
-hr {
-  margin: 4rem 0;
-  width: 100%;
-  height: 1rem;
-  border: 0;
-  background-color: #373A3C; }
+/**********************
+  Shapes
+**********************/
+.circle {
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 50%;
+  border: 3px solid black;
+  text-align: center; }
 
-.code-block {
-  background-color: #F4F4F4;
-  padding: 12px;
-  white-space: pre-wrap; }
-  .code-block .code-text {
-    font-weight: 200; }
+.pill {
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 9999px;
+  border: 3px solid black;
+  text-align: center; }
 
+/**********************
+  Urbit logo
+**********************/
 .urbit-logo {
   width: 72px;
   height: 72px;
@@ -1063,11 +1038,80 @@ hr {
   .urbit-logo-solid:before {
     color: black; }
 
-.circle {
-  display: inline-block;
-  border-radius: 50%;
-  padding: 2rem;
-  vertical-align: middle; }
+/**********************
+  Margin
+**********************/
+.m0 {
+  margin: 0; }
+
+.mt2 {
+  margin-top: 2rem; }
+
+.mt8 {
+  margin-top: 8rem; }
+
+.mb0 {
+  margin-bottom: 0; }
+
+.mb1 {
+  margin-bottom: 1rem; }
+
+.mb2 {
+  margin-bottom: 2rem; }
+
+.mb3 {
+  margin-bottom: 3rem; }
+
+.mb4 {
+  margin-bottom: 4rem; }
+
+.mb5 {
+  margin-bottom: 5rem; }
+
+.mb6 {
+  margin-bottom: 6rem; }
+
+.mb7 {
+  margin-bottom: 7rem; }
+
+.mb8 {
+  margin-bottom: 8rem; }
+
+.mb9 {
+  margin-bottom: 9rem; }
+
+.mb10 {
+  margin-bottom: 10rem; }
+
+.mb16 {
+  margin-bottom: 16rem; }
+
+/**********************
+  Width
+**********************/
+.w2 {
+  width: 2rem;
+  margin-right: 1rem; }
+
+.w4 {
+  width: 4rem;
+  margin-right: 1rem; }
+
+.w8 {
+  width: 8rem;
+  margin-right: 1rem; }
+
+.w16 {
+  width: 16rem;
+  margin-right: 1rem; }
+
+.w32 {
+  width: 32rem;
+  margin-right: 1rem; }
+
+.w64 {
+  width: 64rem;
+  margin-right: 1rem; }
 
 * {
   box-sizing: border-box; }
