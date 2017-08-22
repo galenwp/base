@@ -1,9 +1,21 @@
 @import "colors";
 
+section {
+  margin: 0 0 2rem;
+  border: none;
+}
+
 blockquote {
   border-left: 6px solid black;
   margin: 24px 0;
   padding-left: 18px;
+}
+
+hr {
+  width: 100%;
+  height: 1rem;
+  border: 0;
+  background-color: #000;
 }
 
 ul {
@@ -43,37 +55,6 @@ hr {
 
   .code-text {
     font-weight: 200;
-  }
-}
-
-// Talk-specific styles
-
-.message {
-  margin-bottom: 24px;
-
-  * {
-    font-size: 18px;
-    line-height: 30px;
-  }
-}
-
-.message-title {
-  display: flex;
-}
-
-.message-stamp {
-  font-size: 9px;
-  line-height: 18px;
-
-  margin-left: 18px;
-
-  position: relative;
-  top: 8px;
-}
-
-.message-body {
-  p {
-    margin: 0;
   }
 }
 
