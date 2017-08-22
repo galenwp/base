@@ -1,33 +1,4 @@
-// Golden rule: 6px = 1rem
-
-$gutter: 1rem;
-$halfgutter: .5rem;
-
-$sm-viewport: "only screen and (min-width: 0)";  // mobile, portrait + landscape
-$md-viewport: "only screen and (min-width: 480px)";  // tablet, portrait + landscape
-$lg-viewport: "only screen and (min-width: 960px)";  // computer, regular
-
-/*
-  Fluid-to-fixed conversions at standard screen sizes:
-
-  iPhone (portrait) 320px:
-      - columns:          18px * 12 = 216px       // width: 3
-      - gutter:           6px  * 11 = 66px
-      - outer padding:    18px * 2  = 36px
-                                    = 318px
-
-  iPad (portrait) 768px:
-      - columns:          54px * 12 = 648px       // width: 9
-      - gutter:           6px  * 11 = 66px
-      - outer padding:    24px * 2  = 48px
-                                    = 762px
-
-  regular 960px:
-      - columns:          72px * 12 = 864px       // width: 12
-      - gutter:           6px  * 11 = 66px
-      - outer padding:    18px * 2  = 36px
-                                    = 966px
-*/
+@import "grid-vars";
 
 *[class*="col-"] {
   width: 100%;
@@ -41,16 +12,18 @@ $lg-viewport: "only screen and (min-width: 960px)";  // computer, regular
 }
 
 .row {
-  box-sizing: border-box;
   display: flex;
-  flex: 0 1 auto;
-  flex-direction: row;
   flex-wrap: wrap;
   margin-right: (-$halfgutter);
   margin-left: (-$halfgutter);
 }
 
-@media #{$sm-viewport} {
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media #{$viewport-sm-up} {
   .col-sm,
   .col-sm-1,
   .col-sm-2,
@@ -198,7 +171,7 @@ $lg-viewport: "only screen and (min-width: 960px)";  // computer, regular
   }
 }
 
-@media #{$md-viewport} {
+@media #{$viewport-md-up} {
   .col-md,
   .col-md-1,
   .col-md-2,
@@ -346,7 +319,7 @@ $lg-viewport: "only screen and (min-width: 960px)";  // computer, regular
   }
 }
 
-@media #{$lg-viewport} {
+@media #{$viewport-lg-up} {
   .col-lg,
   .col-lg-1,
   .col-lg-2,
@@ -492,108 +465,4 @@ $lg-viewport: "only screen and (min-width: 960px)";  // computer, regular
   .col-lg-offset-11 {
     margin-left: 91.66666667%;
   }
-}
-
-/*
-  margin spacing utility classes
-*/
-
-.m0 {
-  margin: 0;
-}
-
-.mt2 {
-  margin-top: 2rem;
-}
-
-.mt8 {
-  margin-top: 8rem;
-}
-
-.mb0 {
-  margin-bottom: 0;
-}
-
-.mb1 {
-  margin-bottom: 1rem;
-}
-
-.mb2 {
-  margin-bottom: 2rem;
-}
-
-.mb3 {
-  margin-bottom: 3rem;
-}
-
-.mb4 {
-  margin-bottom: 4rem;
-}
-
-.mb5 {
-  margin-bottom: 5rem;
-}
-
-.mb6 {
-  margin-bottom: 6rem;
-}
-
-.mb7 {
-  margin-bottom: 7rem;
-}
-
-.mb8 {
-  margin-bottom: 8rem;
-}
-
-.mb9 {
-  margin-bottom: 9rem;
-}
-
-.mb10 {
-  margin-bottom: 10rem;
-}
-
-.mb16 {
-  margin-bottom: 16rem;
-}
-
-/*
-  Width utility classes
-*/
-
-.w2 {
-  width: 2rem; // 12px
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.w4 {
-  width: 4rem; // 24px
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.w8 {
-  width: 8rem; // 48px
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.w16 {
-  width: 16rem; // 96px
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.w32 {
-  width: 32rem; // 192px
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.w64 {
-  width: 64rem; // 384px
-  margin-left: 1rem;
-  margin-right: 1rem;
 }

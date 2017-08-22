@@ -1,5 +1,9 @@
 @import "colors";
 
+/**********************
+  Base elements
+**********************/
+
 section {
   margin: 0 0 2rem;
   border: none;
@@ -12,11 +16,16 @@ blockquote {
 }
 
 hr {
+  margin: 4rem 0;
   width: 100%;
   height: 1rem;
   border: 0;
-  background-color: #000;
+  background-color: $gray-dark;
 }
+
+/**********************
+  Lists
+**********************/
 
 ul {
   padding-left: 28px;
@@ -39,24 +48,31 @@ ul ol {
   }
 }
 
-hr {
-  margin: 4rem 0;
-  width: 100%;
-  height: 1rem;
-  border: 0;
-  background-color: $gray-dark;
+/**********************
+  Shapes
+**********************/
+
+.circle {
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 50%;
+  border: 3px solid black;
+
+  text-align: center;
 }
 
-.code-block {
-  background-color: #F4F4F4;
-  padding: 12px;
+.pill {
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 9999px;
+  border: 3px solid black;
 
-  white-space: pre-wrap;
-
-  .code-text {
-    font-weight: 200;
-  }
+  text-align: center;
 }
+
+/**********************
+  Urbit logo
+**********************/
 
 .urbit-logo {
   width: 72px;
@@ -92,11 +108,4 @@ hr {
   &:before {
     color: black;
   }
-}
-
-.circle {
-  display: inline-block;
-  border-radius: 50%;
-  padding: 2rem;
-  vertical-align: middle;
 }

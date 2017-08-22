@@ -1,0 +1,19 @@
+@import "grid-vars";
+
+@media #{$viewport-sm} {
+  .hide-sm {
+    display: none;
+  }
+}
+
+@media #{$viewport-md} {
+  .hide-md {
+    display: none;
+  }
+}
+
+@media #{$viewport-lg} {
+  .hide-lg {
+    display: none;
+  }
+}
