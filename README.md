@@ -18,7 +18,7 @@ That's it.  You can read a bit more about our thinking [here]().
 
 ```
 npm install
-npm serve
+npm run serve
 ```
 
 This should open a window at `http://localhost:8080/` where you can see the test page.
