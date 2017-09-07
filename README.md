@@ -37,8 +37,10 @@ Pull requests are more than welcome.
 
 ## Prior work & influences
 
-[Bootstrap]()  
-[Pure.css]()  
-[skeleton.css]()  
-[Flexbox grid]()  
-[Material Design]()  
+[Tachyons](http://tachyons.io/)
+[Basscss](http://basscss.com/)
+[Bootstrap](http://getbootstrap.com/)  
+[Pure.css](https://purecss.io/)  
+[skeleton.css](http://getskeleton.com/)  
+[Flexbox grid](http://flexboxgrid.com/)  
+[Material Design](https://material.io/guidelines/)  
