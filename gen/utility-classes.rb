@@ -1,4 +1,4 @@
-GENFILE = "sass/util-gen.css"
+GENFILE = "../sass/utilities.scss"
 
 PROPERTIES = [{         # Properties we want to generate
   name: "width",        # Name of CSS property
