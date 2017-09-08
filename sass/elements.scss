@@ -28,12 +28,12 @@ hr {
 **********************/
 
 ul {
-  padding-left: 28px;
+  padding-left: 4rem;
   list-style: disc outside;
 
   li {
-    margin-bottom: 10px;
-    padding-left: 10px;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
   }
 }
 
@@ -41,10 +41,19 @@ ul ol,
 ul ul,
 ol ul,
 ul ol {
-  margin: 12px;
+  margin: 2rem;
 
   li {
-    margin-bottom: 6px;
+    margin-bottom: 1rem;
+  }
+}
+
+ul.list-reset {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    padding-left: 0;
   }
 }
 
