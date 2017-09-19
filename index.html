@@ -14,14 +14,14 @@
       <div class="col-md-offset-1 col-md-10">
         <section class="mt-16 mb-16">
           <h1 class="mb-4">Hey, this is the <code>base</code> stylesheet for Urbit.</h1>
-          <p>Urbit is often used for simple, markdown-based publishing.  This stylesheet is meant to make simple, text-heavy documents look clean, organized and readable.  Also, to provide some basic layout tools that are easy to use when writing basic HTML.</p>
+          <p>Urbit is often used for simple, markdown-based publishing.  This stylesheet is meant to make simple, text-heavy documents look clean, organized and readable.  And, to provide some basic layout tools that are easy to use when writing basic HTML.</p>
           <p class="mb-4">As an open source project, the design guidelines for Urbit are necesarrily open.  Evolving the look and feel of Urbit is intended to be a community project.  Criticism is welcome; criticism in the form of a pull request is even better.</p>
-          <ul class="h3 list-reset">
+          <ul class="h3 list-reset h-font">
             <li>
               Type
-              <ul class="h4 list-reset ml-4">
-                <li>General type rules</li>
-                <li>Headings</li>
+              <ul class="h4 list-reset ml-4 underline">
+                <li><a href="#type">General type rules</li>
+                <li><a href="#headings">Headings</a></li>
                 <li>Body</li>
                 <li>Alignment</li>
                 <li>Modifiers</li>
@@ -54,16 +54,38 @@
         </section>
 
         <section class="mb-16">
-          <h1>Type</h1>
+          <h1 id="type">Type</h1>
 
-        </section>
+          <h2>General type rules</h2>
+          <p class="mb-12">There is a certain glibness in calling someone a legend, but if there's any artist worthy of the title it's Barbara Hammer, whose nearly 50-year career has spanned disciplines and broken boundaries, but has focused most especially on moving images. </p>
 
-        <section class="mb16">
+          <h2 id="headings">Headings</h2>
+
+          <div class="mb-6">
+            <h1>Why painting?</h1>
+            <h2>Why painting?</h2>
+            <h3>Why painting?</h3>
+            <h4>Why painting?</h4>
+            <h5>Why painting?</h5>
+          </div>
+
+<pre class="text-sm mb-12"><code>&#x3C;h1&#x3E;Heading one&#x3C;/h1&#x3E;
+ &#x3C;h2&#x3E;Heading two&#x3C;/h2&#x3E;
+ &#x3C;h3&#x3E;Heading three&#x3C;/h3&#x3E;
+ &#x3C;h4&#x3E;Heading four&#x3C;/h4&#x3E;
+ &#x3C;h5&#x3E;Heading five&#x3C;/h5&#x3E;</code></pre>
+
+          <h2 id="body">Body</h2>
+          <p class="mb-12">There is a certain glibness in calling someone a legend, but if there's any artist worthy of the title it's Barbara Hammer, whose nearly 50-year career has spanned disciplines and broken boundaries, but has focused most especially on moving images. </p>
+
+          <h2 id="body">Alignment</h2>
+          <p class="mb-12">There is a certain glibness in calling someone a legend, but if there's any artist worthy of the title it's Barbara Hammer, whose nearly 50-year career has spanned disciplines and broken boundaries, but has focused most especially on moving images. </p>
+
           <h2>Layout and grids</h2>
           <p>There is a certain glibness in calling someone a legend, but if there's any artist worthy of the title it's Barbara Hammer, whose nearly 50-year career has spanned disciplines and broken boundaries, but has focused most especially on moving images. </p>
 
-          <h3 class="mb4">Simple, percent-based grid</h3>
-          <div class="row mb1">
+          <h3>Simple, percent-based grid</h3>
+          <div class="row mb-1">
             <div class="col-sm-2">
               <div class="black-hl text-sm text-mono text-500 center">2</div>
             </div>
@@ -75,7 +97,7 @@
             </div>
           </div>
 
-          <div class="row mb1">
+          <div class="row mb-1">
             <div class="col-sm-4">
               <div class="black-hl text-sm text-mono text-500 center">4</div>
             </div>
@@ -87,7 +109,7 @@
             </div>
           </div>
 
-          <div class="row mb1">
+          <div class="row mb-1">
             <div class="col-sm-9">
               <div class="black-hl text-sm text-mono text-500 center">9</div>
             </div>
@@ -99,8 +121,8 @@
             </div>
           </div>
 
-          <h4 class="mb4">With breakpoints</h4>
-          <div class="row mb1">
+          <h4 class="mb-2">With breakpoints</h4>
+          <div class="row mb-1">
             <div class="col-sm">
               <div class="black-hl text-sm text-mono text-500 center">sm</div>
             </div>
@@ -115,7 +137,7 @@
             </div>
           </div>
 
-          <div class="row mb1">
+          <div class="row mb-1">
             <div class="col-md-6 col-lg-4">
               <div class="black-hl text-sm text-mono text-500 center">md6, lg4</div>
             </div>
@@ -127,7 +149,7 @@
             </div>
           </div>
 
-          <div class="row mb8">
+          <div class="row mb-8">
             <div class="col-lg-9">
               <div class="black-hl text-sm text-mono text-500 center">lg9</div>
             </div>
@@ -175,12 +197,12 @@
 
         </section>
 
-        <section class="mb16">
+        <section class="mb-16">
           <h2>Typography</h2>
 
           <p>To maintain a pleasing vertical rhythym, Urbit's typographic baseline (and all other elements) are sized as multiples of <strong>6px</strong>. This is also the base font-size, supporting easy REM styling. We've included defaults to make arbitrary arrangements of Markdown components to work cohesively. Additionally, all Typographic elements in elements are equipped with weapons-grade retro encabulators, to support dual marzel veins and prevent side-fumbling. </p>
 
-          <div class="mb6">
+          <div class="mb-6">
             <h1>Why painting? </h1>
             <h2>Why painting?</h2>
             <h3>Why painting?</h3>
