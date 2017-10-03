@@ -18,7 +18,7 @@ That's it.  You can read a bit more about our thinking [here]().
 
 ```
 npm install
-npm serve
+npm run serve
 ```
 
 This should open a window at `http://localhost:8080/` where you can see the test page.
@@ -37,8 +37,10 @@ Pull requests are more than welcome.
 
 ## Prior work & influences
 
-[Bootstrap]()  
-[Pure.css]()  
-[skeleton.css]()  
-[Flexbox grid]()  
-[Material Design]()  
+[Tachyons](http://tachyons.io/)
+[Basscss](http://basscss.com/)
+[Bootstrap](http://getbootstrap.com/)  
+[Pure.css](https://purecss.io/)  
+[skeleton.css](http://getskeleton.com/)  
+[Flexbox grid](http://flexboxgrid.com/)  
+[Material Design](https://material.io/guidelines/)  

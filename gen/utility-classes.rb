@@ -1,4 +1,4 @@
-GENFILE = "sass/util-gen.css"
+GENFILE = "../sass/utilities.scss"
 
 PROPERTIES = [{         # Properties we want to generate
   name: "width",        # Name of CSS property
@@ -52,7 +52,7 @@ def gen_single(prop)
   num_classes.times do |i|
     value = i * prop[:multiple]
     css_classes.push({
-      identifier: ".#{prop[:shorthand]}#{value}",
+      identifier: ".#{prop[:shorthand]}-#{value}",
       prop_name: "#{prop[:name]}",
       prop_value: "#{value}rem"
     })
