@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>base.css - Urbit</title>
   <link rel="stylesheet" href="base.css" />
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
@@ -61,13 +61,12 @@
           <p class="mb-12">There is a certain glibness in calling someone a legend, but if there's any artist worthy of the title it's Barbara Hammer, whose nearly 50-year career has spanned disciplines and broken boundaries, but has focused most especially on moving images. </p>
 
           <h2 id="headings">Headings</h2>
-
           <div class="mb-6">
-            <h1>Why painting?</h1>
-            <h2>Why painting?</h2>
-            <h3>Why painting?</h3>
-            <h4>Why painting?</h4>
-            <h5>Why painting?</h5>
+            <h1>Heading 1 60/96 px</h1>
+            <h2>Heading 2 48/80 px</h2>
+            <h3>Heading 3 36/48 px</h3>
+            <h4>Heading 4 24/40 px</h4>
+            <h5>Heading 5 18/32 px</h5>
           </div>
 
           <pre class="mb-12">
@@ -258,45 +257,77 @@
           <h2>Layout and grids</h2>
           <p>There is a certain glibness in calling someone a legend, but if there's any artist worthy of the title it's Barbara Hammer, whose nearly 50-year career has spanned disciplines and broken boundaries, but has focused most especially on moving images. </p>
 
-          <h3>Simple, percent-based grid</h3>
-          <div class="row mb-1">
+          <h3>Percent-based 12 column grid</h3>
+          <div class="row mb-1 text-lh-lg">
             <div class="col-sm-2">
-              <div class="black-hl text-md text-mono text-700 center">2</div>
+              <div class="black-hl text-md text-mono text-700 center">col-2</div>
             </div>
             <div class="col-sm-7">
-              <div class="black-hl text-md text-mono text-700 center">7</div>
+              <div class="black-hl text-md text-mono text-700 center">col-7</div>
             </div>
             <div class="col-sm-3">
-              <div class="black-hl text-md text-mono text-700 center">3</div>
+              <div class="black-hl text-md text-mono text-700 center">col-3</div>
             </div>
           </div>
-
-          <div class="row mb-1">
+          <div class="row mb-1 text-lh-lg">
             <div class="col-sm-4">
-              <div class="black-hl text-md text-mono text-700 center">4</div>
+              <div class="black-hl text-md text-mono text-700 center">col-4</div>
             </div>
             <div class="col-sm-4">
-              <div class="black-hl text-md text-mono text-700 center">4</div>
+              <div class="black-hl text-md text-mono text-700 center">col-4</div>
             </div>
             <div class="col-sm-4">
-              <div class="black-hl text-md text-mono text-700 center">4</div>
+              <div class="black-hl text-md text-mono text-700 center">col-4</div>
             </div>
           </div>
-
-          <div class="row mb-1">
+          <div class="row mb-1 text-lh-lg">
             <div class="col-sm-9">
-              <div class="black-hl text-md text-mono text-700 center">9</div>
+              <div class="black-hl text-md text-mono text-700 center">col-9</div>
             </div>
             <div class="col-sm-2">
-              <div class="black-hl text-md text-mono text-700 center">2</div>
+              <div class="black-hl text-md text-mono text-700 center">col-2</div>
             </div>
             <div class="col-sm-1">
-              <div class="black-hl text-md text-mono text-700 center">1</div>
+              <div class="black-hl text-md text-mono text-700 center">col-1</div>
             </div>
           </div>
+
+          <pre class="mb-3">&lt;div class=&quot;row mb-1 text-lh-lg&quot;&gt;
+  &lt;div class=&quot;col-sm-2&quot;&gt;
+    &lt;div class=&quot;black-hl text-md text-mono text-700 center&quot;&gt;col-2&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-sm-7&quot;&gt;
+    &lt;div class=&quot;black-hl text-md text-mono text-700 center&quot;&gt;col-7&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-sm-3&quot;&gt;
+    &lt;div class=&quot;black-hl text-md text-mono text-700 center&quot;&gt;col-3&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row mb-1 text-lh-lg&quot;&gt;
+  &lt;div class=&quot;col-sm-4&quot;&gt;
+    &lt;div class=&quot;black-hl text-md text-mono text-700 center&quot;&gt;col-4&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-sm-4&quot;&gt;
+    &lt;div class=&quot;black-hl text-md text-mono text-700 center&quot;&gt;col-4&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-sm-4&quot;&gt;
+    &lt;div class=&quot;black-hl text-md text-mono text-700 center&quot;&gt;col-4&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row mb-1 text-lh-lg&quot;&gt;
+  &lt;div class=&quot;col-sm-9&quot;&gt;
+    &lt;div class=&quot;black-hl text-md text-mono text-700 center&quot;&gt;col-9&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-sm-2&quot;&gt;
+    &lt;div class=&quot;black-hl text-md text-mono text-700 center&quot;&gt;col-2&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-sm-1&quot;&gt;
+    &lt;div class=&quot;black-hl text-md text-mono text-700 center&quot;&gt;col-1&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
 
           <h4 class="mb-2">With breakpoints</h4>
-          <div class="row mb-1">
+          <div class="row mb-1 text-lh-lg">
             <div class="col-sm">
               <div class="black-hl text-md text-mono text-700 center">sm</div>
             </div>
@@ -310,8 +341,7 @@
               <div class="black-hl text-md text-mono text-700 center">sm</div>
             </div>
           </div>
-
-          <div class="row mb-1">
+          <div class="row mb-1 text-lh-lg">
             <div class="col-md-6 col-lg-4">
               <div class="black-hl text-md text-mono text-700 center">md6, lg4</div>
             </div>
@@ -322,8 +352,7 @@
               <div class="black-hl text-md text-mono text-700 center">md6, lg4</div>
             </div>
           </div>
-
-          <div class="row mb-8">
+          <div class="row text-lh-lg">
             <div class="col-lg-9">
               <div class="black-hl text-md text-mono text-700 center">lg9</div>
             </div>
@@ -332,74 +361,76 @@
             </div>
           </div>
 
-          <h3>Fixed width utilities</h3>
+          <pre class="mb-6">&lt;div class=&quot;row mb-1 text-lh-lg&quot;&gt;
+  &lt;div class=&quot;col-sm&quot;&gt;
+    &lt;div class=&quot;black-hl text-md text-mono text-700 center&quot;&gt;sm&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-sm&quot;&gt;
+    &lt;div class=&quot;black-hl text-md text-mono text-700 center&quot;&gt;sm&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-sm&quot;&gt;
+    &lt;div class=&quot;black-hl text-md text-mono text-700 center&quot;&gt;sm&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-sm&quot;&gt;
+    &lt;div class=&quot;black-hl text-md text-mono text-700 center&quot;&gt;sm&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row mb-1 text-lh-lg&quot;&gt;
+  &lt;div class=&quot;col-md-6 col-lg-4&quot;&gt;
+    &lt;div class=&quot;black-hl text-md text-mono text-700 center&quot;&gt;md6, lg4&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-6 col-lg-4&quot;&gt;
+    &lt;div class=&quot;black-hl text-md text-mono text-700 center&quot;&gt;md6, lg4&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-6 col-lg-4&quot;&gt;
+    &lt;div class=&quot;black-hl text-md text-mono text-700 center&quot;&gt;md6, lg4&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row mb-8 text-lh-lg&quot;&gt;
+  &lt;div class=&quot;col-lg-9&quot;&gt;
+    &lt;div class=&quot;black-hl text-md text-mono text-700 center&quot;&gt;lg9&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-lg-offset-1 col-lg-2&quot;&gt;
+    &lt;div class=&quot;black-hl text-sm text-mono text-700 center&quot;&gt;offset1,lg2&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+          <h3>Fixed width / height utilities</h3>
           <p class="mb4">Hammer was raised in Hollywood, California. It wasn't until her early thirties that she left her husband, came out as lesbian, and, inspired by the experimental filmmaker Maya Deren, began making short, scintillating films of her own.</p>
+          <div class="flex mb-1">
+            <div class="w-12 black-hl text-md text-mono text-700 center mr-3 p-1">w-12</div>
+            <div class="w-16 black-hl text-md text-mono text-700 center mr-3 p-1">w-16</div>
+            <div class="w-20 black-hl text-md text-mono text-700 center mr-3 p-1">w-20</div>
+          </div>
+          <div class="flex mb-1">
+            <div class="w-12 h-12 black-hl text-md text-mono text-700 center mr-3 p-1">w-12<br />h-12</div>
+            <div class="w-16 h-16 black-hl text-md text-mono text-700 center mr-3 p-1">w-16<br />h-16</div>
+            <div class="w-20 h-20 black-hl text-md text-mono text-700 center mr-3 p-1">w-20<br />h-20</div>
+          </div>
           <div class="flex mb1">
-            <div class="w8 black-hl text-sm text-mono text-500 center">8</div>
-            <div class="w8 black-hl text-sm text-mono text-500 center">8</div>
-            <div class="w8 black-hl text-sm text-mono text-500 center">8</div>
+            <div class="w-24 h-24 black-hl text-md text-mono text-700 center mr-3 mb-3">w-24<br />h-24</div>
+            <div class="w-36 h-36 black-hl text-md text-mono text-700 center mr-3 mb-3">w-36<br />h-36</div>
+            <div class="w-48 h-48 black-hl text-md text-mono text-700 center mr-3 mb-3">w-48<br />h-48</div>
           </div>
 
-          <div class="flex mb1">
-            <div class="w16 black-hl text-sm text-mono text-500 center">16</div>
-            <div class="w16 black-hl text-sm text-mono text-500 center">16</div>
-            <div class="w16 black-hl text-sm text-mono text-500 center">16</div>
-          </div>
+          <pre class="mb-12">&lt;div class=&quot;flex mb-1&quot;&gt;
+  &lt;div class=&quot;w-12 black-hl text-md text-mono text-700 center mr-3 p-1&quot;&gt;w-12&lt;/div&gt;
+  &lt;div class=&quot;w-16 black-hl text-md text-mono text-700 center mr-3 p-1&quot;&gt;w-16&lt;/div&gt;
+  &lt;div class=&quot;w-20 black-hl text-md text-mono text-700 center mr-3 p-1&quot;&gt;w-20&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;flex mb-1&quot;&gt;
+  &lt;div class=&quot;w-12 h-12 black-hl text-md text-mono text-700 center mr-3 p-1&quot;&gt;w-12&lt;br /&gt;h-12&lt;/div&gt;
+  &lt;div class=&quot;w-16 h-16 black-hl text-md text-mono text-700 center mr-3 p-1&quot;&gt;w-16&lt;br /&gt;h-16&lt;/div&gt;
+  &lt;div class=&quot;w-20 h-20 black-hl text-md text-mono text-700 center mr-3 p-1&quot;&gt;w-20&lt;br /&gt;h-20&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;flex mb1&quot;&gt;
+  &lt;div class=&quot;w-24 h-24 black-hl text-md text-mono text-700 center mr-3 mb-3&quot;&gt;w-24&lt;br /&gt;h-24&lt;/div&gt;
+  &lt;div class=&quot;w-36 h-36 black-hl text-md text-mono text-700 center mr-3 mb-3&quot;&gt;w-36&lt;br /&gt;h-36&lt;/div&gt;
+  &lt;div class=&quot;w-48 h-48 black-hl text-md text-mono text-700 center mr-3 mb-3&quot;&gt;w-48&lt;br /&gt;h-48&lt;/div&gt;
+&lt;/div&gt;</pre>
 
-          <div class="flex mb1">
-            <div class="w32 black-hl text-sm text-mono text-500 center mb2">32</div>
-            <div class="w32 black-hl text-sm text-mono text-500 center mb2">32</div>
-            <div class="w32 black-hl text-sm text-mono text-500 center mb2">32</div>
-          </div>
+          <h3>Margin / padding utilities</h3>
 
-          <h4>Code —</h4>
-          <pre class="text-sm"><code>&#x3C;div class=&#x22;row mb2&#x22;&#x3E;
-      &#x3C;div class=&#x22;w8 black-hl text-sm text-mono text-500 center&#x22;&#x3E;48&#x3C;/div&#x3E;
-      &#x3C;div class=&#x22;w8 black-hl text-sm text-mono text-500 center&#x22;&#x3E;48&#x3C;/div&#x3E;
-      &#x3C;div class=&#x22;w8 black-hl text-sm text-mono text-500 center&#x22;&#x3E;48&#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;row mb2&#x22;&#x3E;
-      &#x3C;div class=&#x22;w16 black-hl text-sm text-mono text-500 center&#x22;&#x3E;96&#x3C;/div&#x3E;
-      &#x3C;div class=&#x22;w16 black-hl text-sm text-mono text-500 center&#x22;&#x3E;96&#x3C;/div&#x3E;
-      &#x3C;div class=&#x22;w16 black-hl text-sm text-mono text-500 center&#x22;&#x3E;96&#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;div class=&#x22;row mb8&#x22;&#x3E;
-      &#x3C;div class=&#x22;w32 black-hl text-sm text-mono text-500 center mb2&#x22;&#x3E;192&#x3C;/div&#x3E;
-      &#x3C;div class=&#x22;w32 black-hl text-sm text-mono text-500 center mb2&#x22;&#x3E;192&#x3C;/div&#x3E;
-      &#x3C;div class=&#x22;w32 black-hl text-sm text-mono text-500 center mb2&#x22;&#x3E;192&#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;</code></pre>
-
-        </section>
-
-        <section class="mb-16">
-          <h2>Typography</h2>
-
-          <p>To maintain a pleasing vertical rhythym, Urbit's typographic baseline (and all other elements) are sized as multiples of <strong>6px</strong>. This is also the base font-size, supporting easy REM styling. We've included defaults to make arbitrary arrangements of Markdown components to work cohesively. Additionally, all Typographic elements in elements are equipped with weapons-grade retro encabulators, to support dual marzel veins and prevent side-fumbling. </p>
-
-          <div class="mb-6">
-            <h1>Heading 1 60/96 px</h1>
-            <h2>Heading 2 48/80 px</h2>
-            <h3>Heading 3 36/48 px</h3>
-            <h4>Heading 4 24/40 px</h4>
-            <h5>Heading 5 18/32 px</h5>
-          </div>
-
-          <h4>Code —</h4>
-          <pre class="text-sm mb8"><code>&#x3C;h1&#x3E;Heading one&#x3C;/h1&#x3E;
-    &#x3C;h2&#x3E;Heading two&#x3C;/h2&#x3E;
-    &#x3C;h3&#x3E;Heading three&#x3C;/h3&#x3E;
-    &#x3C;h4&#x3E;Heading four&#x3C;/h4&#x3E;
-    &#x3C;h5&#x3E;Heading five&#x3C;/h5&#x3E;</code></pre>
-
-          <p>This summer, ahead of the Leslie-Lohman show, Interview spoke with Hammer about the places she lives, the art she makes, and what it takes to fill, as she calls it, the blank screen.</p>
-
-          <h4>Code —</h4>
-          <pre class="text-sm mb8"><code>&#x3C;p&#x3E;This summer, ahead of the Leslie-Lohman show, Interview spoke with Hammer about the places she lives, the art she makes, and what it takes to fill, as she calls it, the blank screen.&#x3C;/p&#x3E;</code></pre>
-
-          <p>There's lots of reading, of course. <em>Interviewing people.</em> Getting permission to shoot them — <b>oh my God</b>, is that <u>hard</u>. Some people won't sign the release after you set up everything for an interview. People will say, "You shouldn't be making this film."</p>
-
-          <h4>Code —</h4>
-          <pre class="text-sm mb8"><code>&#x3C;p&#x3E;There&#x27;s lots of reading, of course. &#x3C;em&#x3E;Interviewing people.&#x3C;/em&#x3E; Getting permission to shoot them &#x2014; &#x3C;b&#x3E;oh my God&#x3C;/b&#x3E;, is that &#x3C;u&#x3E;hard&#x3C;/u&#x3E;. Some people won&#x27;t sign the release after you set up everything for an interview. People will say, &#x22;You shouldn&#x27;t be making this film.&#x22;&#x3C;/p&#x3E;</code></pre>
         </section>
 
         <section>
