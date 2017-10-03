@@ -57,6 +57,25 @@ ul.list-reset {
   }
 }
 
+ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+ol > li {
+  counter-increment: item;
+  margin-left: 0;
+}
+
+ol > li:before {
+  content: counter(item);
+  font-weight: 700;
+  vertical-align: center;
+  display: inline-block;
+  width: 6rem;
+  text-align: left;
+}
+
 /**********************
   Shapes
 **********************/

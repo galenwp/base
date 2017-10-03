@@ -724,7 +724,7 @@ h1,
 .h1 {
   font-size: 10rem;
   font-weight: 800;
-  line-height: 14rem;
+  line-height: 12rem;
   margin: 4rem 0; }
 
 h2,
@@ -736,15 +736,15 @@ h2,
 
 h3,
 .h3 {
-  font-size: 4rem;
+  font-size: 6rem;
   font-weight: 600;
   line-height: 6rem;
   margin: 2rem 0; }
 
 h4,
 .h4 {
-  font-size: 3rem;
-  font-weight: 500;
+  font-size: 4rem;
+  font-weight: 600;
   line-height: 5rem;
   margin: 1rem 0; }
 
@@ -775,7 +775,7 @@ code,
 
 .code-block {
   background-color: #F4F4F4;
-  padding: 12px;
+  padding: 3rem;
   white-space: pre-wrap; }
 
 .code-block .text-code {
@@ -796,6 +796,12 @@ code,
 .text-lh-sm {
   line-height: 3rem; }
 
+.text-lh-md {
+  line-height: 6rem; }
+
+.text-lh-lg {
+  line-height: 10rem; }
+
 /**********************
   Formatting
 **********************/
@@ -805,7 +811,7 @@ u, .underline {
 s, .strikethrough {
   text-decoration: line-through; }
 
-em, .italics {
+em, .italic {
   font-style: italic; }
 
 .capitalize {
@@ -814,22 +820,22 @@ em, .italics {
 .uppercase {
   text-transform: uppercase; }
 
-.bold-300 {
+.text-300 {
   font-weight: 300; }
 
-.bold-400 {
+.text-400 {
   font-weight: 400; }
 
-.bold-500 {
+.text-500 {
   font-weight: 500; }
 
-.bold-600 {
+.text-600 {
   font-weight: 600; }
 
-b, .bold-700 {
+b, .text-700 {
   font-weight: 700; }
 
-.bold-800 {
+.text-800 {
   font-weight: 800; }
 
 .h-font {
@@ -899,6 +905,9 @@ b, .bold-700 {
 
 .right {
   text-align: right; }
+
+.justify {
+  text-align: justify; }
 
 /**********************
   Buttons
@@ -1004,6 +1013,22 @@ ul.list-reset {
   padding-left: 0; }
   ul.list-reset li {
     padding-left: 0; }
+
+ol {
+  list-style: none;
+  padding-left: 0; }
+
+ol > li {
+  counter-increment: item;
+  margin-left: 0; }
+
+ol > li:before {
+  content: counter(item);
+  font-weight: 700;
+  vertical-align: center;
+  display: inline-block;
+  width: 6rem;
+  text-align: left; }
 
 /**********************
   Shapes
