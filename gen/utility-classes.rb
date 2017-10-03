@@ -36,7 +36,7 @@ def generate_classes (props)
     css_objs[prop[:name]] = {}
 
     if prop[:all_sides]
-      css_objs[prop[:name]][:classes] = gen_multiple(prop)
+      css_objs[prop[:name]][:classes] = gen_multiple(prop).concat(gen_single(prop))
     else
       css_objs[prop[:name]][:classes] = gen_single(prop)
     end
