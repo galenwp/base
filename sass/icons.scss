@@ -1,0 +1,11 @@
+.arrow-right:before {
+  content: "→";
+}
+
+.arrow-left:before {
+  content: "←";
+}
+
+.selected:before{
+  content: "∙"
+}
