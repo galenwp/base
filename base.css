@@ -1,9 +1,12 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900&text=%E2%86%90|%E2%86%92");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -967,6 +970,40 @@ input[type="text"] {
 
 .input-group.error .error-label {
   display: block; }
+
+.arrow-right:before {
+  content: "→"; }
+
+.arrow-left:before {
+  content: "←"; }
+
+.selected:before {
+  content: "∙"; }
+
+.icon {
+  margin-right: .6rem; }
+
+.icon.prev {
+  width: 1px;
+  height: 1px;
+  border: 12.0006px solid transparent;
+  border-right: 18px solid #000;
+  border-left: 0 solid transparent; }
+
+.icon.next {
+  width: 1px;
+  height: 1px;
+  border: 12.0006px solid transparent;
+  border-left: 18px solid #000;
+  border-right: 0 solid transparent;
+  margin-right: 0; }
+
+.icon.up {
+  width: 1px;
+  height: 1px;
+  border: 12.0006px solid transparent;
+  border-bottom: 18px solid #000;
+  border-top: 0 solid transparent; }
 
 /**********************
   Base elements
