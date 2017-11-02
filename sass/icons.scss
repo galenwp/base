@@ -1,0 +1,37 @@
+.arrow-right:before {
+  content: "→";
+}
+
+.arrow-left:before {
+  content: "←";
+}
+
+.selected:before{
+  content: "∙"
+}
+//not production ready
+.icon{
+  margin-right:.6rem;
+}
+.icon.prev {
+  width: 1px;
+  height: 1px;
+  border: 12.0006px solid transparent;
+  border-right: 18px solid #000;
+  border-left: 0 solid transparent;
+}
+.icon.next {
+  width: 1px;
+  height: 1px;
+  border: 12.0006px solid transparent;
+  border-left: 18px solid #000;
+  border-right: 0 solid transparent;
+  margin-right:0;
+}
+.icon.up {
+  width: 1px;
+  height: 1px;
+  border: 12.0006px solid transparent;
+  border-bottom: 18px solid #000;
+  border-top: 0 solid transparent;
+}
