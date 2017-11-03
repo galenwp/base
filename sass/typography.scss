@@ -5,7 +5,7 @@
 
   small   :  12px / 16px
   body(*) :  16px / 24px
-  5       :  20px / 28px + (? letter spacing, diff font, bold, uppercase, etc.)
+  large/5 :  20px / 28px + (? letter spacing, diff font, bold, uppercase, etc.)
   4       :  20px / 28px
   3       :  24px / 32px
   2       :  36px / 52px
@@ -27,8 +27,8 @@
 body {
   /*font-family: "San Francisco Text", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 3rem;
-  line-height: 5rem;
+  font-size: 4rem;
+  line-height: 6rem;
   color: $gray-dark;
 }
 
@@ -57,17 +57,17 @@ h5,
 
 h1,
 .h1 {
-  font-size: 10rem;
+  font-size: 12rem;
   font-weight: 600;
-  line-height: 12rem;
+  line-height: 16rem;
   margin: 4rem 0;
 }
 
 h2,
 .h2 {
-  font-size: 8rem;
+  font-size: 9rem;
   font-weight: 600;
-  line-height: 10rem;
+  line-height: 13rem;
   margin: 3rem 0;
 }
 
@@ -75,24 +75,39 @@ h3,
 .h3 {
   font-size: 6rem;
   font-weight: 600;
-  line-height: 6rem;
+  line-height: 8rem;
   margin: 2rem 0;
 }
 
 h4,
 .h4 {
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 600;
-  line-height: 5rem;
+  line-height: 7rem;
   margin: 1rem 0;
 }
 
 h5,
 .h5 {
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: 500;
-  line-height: 4rem;
+  line-height: 7rem;
   margin: 1rem 0;
+}
+
+caption, .text-sm {
+  font-size: 3rem;
+  line-height: 5rem;
+}
+
+.text-md {
+  font-size: 4rem;
+  line-height: 6rem;
+}
+
+.text-lg {
+  font-size: 5rem;
+  line-height: 7rem;
 }
 
 /**********************
@@ -125,34 +140,6 @@ code,
 
 .code-block .text-code {
   font-weight: 200;
-}
-
-/**********************
-  Text sizes
-**********************/
-
-.text-xs {
-  font-size: 1.5rem;
-}
-
-.text-sm {
-  font-size: 2rem;
-}
-
-.text-lh-xs {
-  line-height: 2rem;
-}
-
-.text-lh-sm {
-  line-height: 3rem;
-}
-
-.text-lh-md {
-  line-height: 6rem;
-}
-
-.text-lh-lg {
-  line-height: 10rem;
 }
 
 /**********************
