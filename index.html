@@ -424,7 +424,7 @@
 &lt;/div&gt;</pre>
 
           <h3 id="margin">Margin / padding utilities</h3>
-          <p class="mb4">Hammer was raised in Hollywood, California. It wasn't until her early thirties that she left her husband, came out as lesbian, and, inspired by the experimental filmmaker Maya Deren, began making short, scintillating films of her own.</p>
+          <p class="mb-4">Hammer was raised in Hollywood, California. It wasn't until her early thirties that she left her husband, came out as lesbian, and, inspired by the experimental filmmaker Maya Deren, began making short, scintillating films of her own.</p>
 
           <div class="row">
             <div class="w-100 black-hl text-md text-mono text-700 center mr-3 p-1 mb-1">mb-1</div>
@@ -454,7 +454,10 @@
 &lt;/div&gt;</pre>
 
         <section>
-          <h3>Buttons</h3>
+          <h3 class="mt-12">Buttons</h3>
+
+          <p class="mt-2 mb-4">Hammer was raised in Hollywood, California. It wasn't until her early thirties that she left her husband, came out as lesbian, and, inspired by the experimental filmmaker Maya Deren, began making short, scintillating films of her own.</p>
+
           <div class="row">
             <button class="btn mr-2">Action</button>
             <button class="btn mr-2 btn-primary">Action</button>
@@ -487,29 +490,74 @@
   &lt;button class=&quot;btn btn-sm mr-2 btn-warning&quot;&gt;Serious action&lt;/button&gt;
 &lt;/div&gt;</pre>
 
-          <h3>Forms</h3>
-          <div class="input-group">
-            <label>Name</label>
-            <input type="text" />
+          <h3 class="mt-12">Forms</h3>
+
+          <p class="mt-2 mb-4">Hammer was raised in Hollywood, California. It wasn't until her early thirties that she left her husband, came out as lesbian, and, inspired by the experimental filmmaker Maya Deren, began making short, scintillating films of her own.</p>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="input-group">
+                <label>Name</label>
+                <input type="text" />
+              </div>
+              <div class="input-group error">
+                <label>Age</label>
+                <input type="text" value="John" />
+                <div class="error-label">Age must be a number.</div>
+              </div>
+            </div>
+            <div class="col-md-7 col-md-offset-1">
+              <div class="input-group">
+                <label>Message</label>
+                <textarea rows="6"></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-secondary">Send</button>
           </div>
-          <div class="input-group error">
-            <label>Age</label>
-            <input type="text" value="John" />
-            <div class="error-label">Age must be a number.</div>
-          </div>
-          <div class="input-group">
-            <label>Message</label>
-            <textarea rows="6"></textarea>
-          </div>
-          <button type="submit" class="btn btn-secondary">Send</button>
-          <h3>Icons / Circles</h3>
+
+          <pre>&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;
+    &lt;div class=&quot;input-group&quot;&gt;
+      &lt;label&gt;Name&lt;/label&gt;
+      &lt;input type=&quot;text&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;input-group error&quot;&gt;
+      &lt;label&gt;Age&lt;/label&gt;
+      &lt;input type=&quot;text&quot; value=&quot;John&quot; /&gt;
+      &lt;div class=&quot;error-label&quot;&gt;Age must be a number.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-7 col-md-offset-1&quot;&gt;
+    &lt;div class=&quot;input-group&quot;&gt;
+      &lt;label&gt;Message&lt;/label&gt;
+      &lt;textarea rows=&quot;6&quot;&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button type=&quot;submit&quot; class=&quot;btn btn-secondary&quot;&gt;Send&lt;/button&gt;
+&lt;/div&gt;
+          </pre>
+
+          <h3 class="mt-12">Icons / Circles</h3>
+
+          <p>Line of filler text.</p>
+
           <h3>
             <icon class="arrow-left"></icon>
             <icon class="arrow-right"></icon>
           </h3>
+
+          <pre>&lt;h3&gt;
+  &lt;icon class=&quot;arrow-left&quot;&gt;&lt;/icon&gt;
+  &lt;icon class=&quot;arrow-right&quot;&gt;&lt;/icon&gt;
+&lt;/h3&gt;</pre>
+
         </section>
 
-        <section class="mb16">
+        <section class="mb-16">
+          <h3 class="mt-12">Code blocks</h3>
+
+          <p class="mt-2 mb-4">Hammer was raised in Hollywood, California. It wasn't until her early thirties that she left her husband, came out as lesbian, and, inspired by the experimental filmmaker Maya Deren, began making short, scintillating films of her own.</p>
+
           <pre class="code-block"><code class="text-code">++  watch-dir
 |=  a/path
 ^-  (list move)
@@ -527,7 +575,15 @@ soc
 rif
 [[ost.hid car] ~]
           </code></pre>
+
+          <p>(The code for the above is)</p>
+
+          <pre>&lt;pre class=&quot;code-block&quot;&gt;&lt;code class=&quot;text-code&quot;&gt;
+  ...
+&lt;/code&gt;&lt;/pre&gt;</pre>
         </section>
+        <p>===</p>
+        <p class="mb-32">Happy coding!</p>
       </div>
     </article>
   </div>
