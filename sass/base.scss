@@ -5,9 +5,14 @@
 @import "buttons";
 @import "forms";
 @import "icons";
+@import "shapes";
 @import "elements";
 @import "utilities";
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  font-size: 4px;
 }
