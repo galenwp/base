@@ -1010,7 +1010,7 @@ label {
 
 textarea,
 input[type="text"] {
-  border: .5rem solid #000;
+  border: 2px solid black;
   padding: 12px;
   width: 100%; }
 
@@ -1030,6 +1030,37 @@ input[type="text"] {
 
 .input-group.error .error-label {
   display: block; }
+
+.checkbox-group label,
+.checkbox-group input,
+.radio-group label,
+.radio-group input {
+  font-weight: 400;
+  display: inline-block; }
+
+.select-dropdown {
+  display: flex;
+  border: 2px solid black;
+  overflow: hidden;
+  background-color: white; }
+
+.select-dropdown select {
+  padding: 5px 8px;
+  width: 130%;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  -webkit-appearance: none; }
+
+.select-dropdown select:focus {
+  outline: none; }
+
+.select-dropdown .triangle-down {
+  border-width: 2rem 1rem 0rem 1rem;
+  position: relative;
+  top: 14px;
+  right: 8px; }
 
 /*
   Available/supported icons:
