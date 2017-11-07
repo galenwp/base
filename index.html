@@ -5,8 +5,6 @@
   <meta charset="UTF-8">
   <title>base.css - Urbit</title>
   <link rel="stylesheet" href="base.css" />
-  <!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900& rel="stylesheet"> -->
-
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
@@ -50,6 +48,7 @@
                 <li><a href="#buttons">Buttons</a></li>
                 <li><a href="#forms">Forms / inputs</a></li>
                 <li><a href="#icons">Icons</a></li>
+                <li><a href="#shapes">Shapes</a></li>
               </ul>
             </li>
             <li>Source code &amp; contributing</li>
@@ -575,20 +574,97 @@
 &lt;/div&gt;
           </pre>
 
-          <h3 id="icons" class="mt-12">Icons / Circles</h3>
+          <h3 id="icons" class="mt-12">Icons</h3>
 
-          <p>Line of filler text.</p>
+          <p>Icons are roughly text-sized symbols, usually implemented in a font set (currently Work Sans)</p>
+          <p>Two ways to implement icons:</p>
+          <ul>
+            <li>Use Unicode symbol directly in code, wrapped by an &lt;icon&gt; tag</li>
+            <li>Use a predefined "icon-" css class (with additional positioning/styling presets)</li>
+          </ul>
 
           <h3>
-            <icon class="arrow-left"></icon>
-            <icon class="arrow-right"></icon>
+            <icon>↑</icon>
+            <icon class="icon-arrow-up"></icon>
+            <icon>↓</icon>
+            <icon class="icon-arrow-down"></icon>
+            <icon>←</icon>
+            <icon>→</icon>
+            <icon class="icon-arrow-left"></icon>
+            <icon class="icon-arrow-right"></icon>
+            <icon>🅱</icon>
+            <icon>🅰</icon>
+          </h3>
+          <h3>
+            <icon class="icon-cross"></icon>
+            <icon class="icon-ellipsis"></icon>
+            <icon>...</icon>
           </h3>
 
           <pre>&lt;h3&gt;
-  &lt;icon class=&quot;arrow-left&quot;&gt;&lt;/icon&gt;
-  &lt;icon class=&quot;arrow-right&quot;&gt;&lt;/icon&gt;
+  &lt;icon&gt;&uarr;&lt;/icon&gt;
+  &lt;icon class=&quot;icon-arrow-up&quot;&gt;&lt;/icon&gt;
+  &lt;icon&gt;&darr;&lt;/icon&gt;
+  &lt;icon class=&quot;icon-arrow-down&quot;&gt;&lt;/icon&gt;
+  &lt;icon&gt;&larr;&lt;/icon&gt;
+  &lt;icon&gt;&rarr;&lt;/icon&gt;
+  &lt;icon class=&quot;icon-arrow-left&quot;&gt;&lt;/icon&gt;
+  &lt;icon class=&quot;icon-arrow-right&quot;&gt;&lt;/icon&gt;
+  &lt;icon&gt;🅱&lt;/icon&gt;
+  &lt;icon&gt;🅰&lt;/icon&gt;
+&lt;/h3&gt;
+&lt;h3&gt;
+  &lt;icon class=&quot;icon-cross&quot;&gt;&lt;/icon&gt;
+  &lt;icon class=&quot;icon-ellipsis&quot;&gt;&lt;/icon&gt;
+  &lt;icon&gt;...&lt;/icon&gt;
 &lt;/h3&gt;</pre>
 
+
+          <h3 id="shapes" class="mt-12">Shapes</h3>
+
+          <p>Shapes are CSS-drawn figures that are expandable, dynamic, or impossible to fit into a character set.</p>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="circle"></div>
+              <div class="circle circle-fill"></div>
+              <div class="circle circle-red"></div>
+              <div class="circle circle-pill"></div>
+              <br />
+              <div class="circle circle-lg"></div>
+              <div class="circle circle-lg circle-fill"></div>
+              <div class="circle circle-lg circle-red"></div>
+              <div class="circle circle-lg circle-pill"></div>
+            </div>
+            <div class="col-md-4">
+              <div class="square"></div>
+              <div class="square square-fill"></div>
+              <div class="square square-red"></div>
+              <div class="square square-rect"></div>
+              <br />
+              <div class="square square-lg"></div>
+              <div class="square square-lg square-fill"></div>
+              <div class="square square-lg square-red"></div>
+              <div class="square square-lg square-rect"></div>
+            </div>
+            <div class="col-md-4">
+              <div class="triangle-base triangle-up"></div>
+              <div class="triangle-base triangle-right"></div>
+              <div class="triangle-base triangle-down"></div>
+              <div class="triangle-base triangle-left"></div>
+            </div>
+          </div>
+
+          <pre>&lt;!-- only circles shown for brevity; inspect source to get full set --&gt;
+&lt;div class=&quot;circle&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;circle circle-fill&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;circle circle-red&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;circle circle-pill&quot;&gt;&lt;/div&gt;
+&lt;br /&gt;
+&lt;div class=&quot;circle circle-lg&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;circle circle-lg circle-fill&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;circle circle-lg circle-red&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;circle circle-lg circle-pill&quot;&gt;&lt;/div&gt;</pre>
         </section>
 
         <section class="mb-16">
