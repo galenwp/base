@@ -1,14 +1,42 @@
-.arrow-right:before {
+/*
+  Available/supported icons:
+
+  →
+  ←
+  ∙
+
+*/
+
+.icon-arrow-right:before {
   content: "→";
 }
 
-.arrow-left:before {
+.icon-arrow-left:before {
   content: "←";
+}
+
+.icon-arrow-up:before {
+  content: "↑";
+}
+
+.icon-arrow-down:before {
+  content: "↓";
+}
+
+.icon-cross:before {
+  content: "×";
+}
+
+.icon-ellipsis:before {
+  content: "...";
+  position: relative;
+  bottom: 6px;
 }
 
 .selected:before{
   content: "∙"
 }
+
 //not production ready
 .icon{
   margin-right:.6rem;

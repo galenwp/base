@@ -23,6 +23,14 @@
   flex-wrap: wrap;
 }
 
+.align-vertical {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
 @media #{$viewport-sm-up} {
   .col-sm,
   .col-sm-1,

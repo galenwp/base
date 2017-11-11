@@ -5,8 +5,6 @@
   <meta charset="UTF-8">
   <title>base.css - Urbit</title>
   <link rel="stylesheet" href="base.css" />
-  <!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900& rel="stylesheet"> -->
-
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
@@ -38,17 +36,19 @@
             <li>
               Layout
               <ul class="h5 list-reset ml-4">
-                <li><a href="#grid">Percent-based grid</a></li>
+                <li><a href="#grid">Grid system</a></li>
                 <li><a href="#width">Width / height utilities</a></li>
                 <li><a href="#margin">Margin / padding utilities</a></li>
+                <li><a href="#centering">Vertical / horizontal centering</a></li>
               </ul>
             </li>
             <li>
               Forms &amp; Elements
               <ul class="h5 list-reset ml-4">
-                <li>Buttons</li>
-                <li>Inputs</li>
-                <li>Icons / Circles</li>
+                <li><a href="#buttons">Buttons</a></li>
+                <li><a href="#forms">Forms / inputs</a></li>
+                <li><a href="#icons">Icons</a></li>
+                <li><a href="#shapes">Shapes</a></li>
               </ul>
             </li>
             <li>Source code &amp; contributing</li>
@@ -64,11 +64,11 @@
 
           <h2 id="headings">Headings</h2>
           <div class="mb-6">
-            <h1>Heading 1 60/72 px</h1>
-            <h2>Heading 2 48/60 px</h2>
-            <h3>Heading 3 36/36 px</h3>
-            <h4>Heading 4 24/30 px</h4>
-            <h5>Heading 5 18/24 px</h5>
+            <h1>Heading 1 48/64 px</h1>
+            <h2>Heading 2 36/52 px</h2>
+            <h3>Heading 3 24/32 px</h3>
+            <h4>Heading 4 20/28 px</h4>
+            <h5>Heading 5 20/28 px</h5>
           </div>
 
           <pre class="mb-12">
@@ -97,23 +97,15 @@
 
           <h2 id="modifiers">Modifiers</h2>
           <h4>Size</h4>
+          <p class="text-lg">Now it is a game, I am going to play.</p>
+          <p class="text-md">Now it is a game, I am going to play.</p>
           <p>Now it is a game, I am going to play.</p>
           <p class="text-sm">Now it is a game, I am going to play.</p>
-          <p class="text-xs">Now it is a game, I am going to play.</p>
-          <pre class="mb-6">&#x3C;p&#x3E;Now it is a game, I am going to play.&#x3C;/p&#x3E;
-&#x3C;p class=&#x22;text-sm&#x22;&#x3E;Now it is a game, I am going to play.&#x3C;/p&#x3E;
-&#x3C;p class=&#x22;text-xs&#x22;&#x3E;Now it is a game, I am going to play.&#x3C;/p&#x3E;</pre>
-          <h4>Line-height</h4>
-          <p class="text-lh-lg">There is a certain glibness in calling someone a legend.</p>
-          <p class="text-lh-md">There is a certain glibness in calling someone a legend.</p>
-          <p>There is a certain glibness in calling someone a legend.</p>
-          <p class="text-lh-sm">There is a certain glibness in calling someone a legend.</p>
-          <p class="text-lh-xs">There is a certain glibness in calling someone a legend.</p>
-          <pre class="mb-6">&lt;p class=&quot;text-lh-lg&quot;&gt;There is a certain glibness in calling someone a legend.&lt;/p&gt;
-&lt;p class=&quot;text-lh-md&quot;&gt;There is a certain glibness in calling someone a legend.&lt;/p&gt;
-&lt;p&gt;There is a certain glibness in calling someone a legend.&lt;/p&gt;
-&lt;p class=&quot;text-lh-sm&quot;&gt;There is a certain glibness in calling someone a legend.&lt;/p&gt;
-&lt;p class=&quot;text-lh-xs&quot;&gt;There is a certain glibness in calling someone a legend.&lt;/p&gt;</pre>
+
+          <pre class="mb-6">&#x3C;p class=&#x22;text-lg&#x22;&#x3E;Now it is a game, I am going to play.&#x3C;/p&#x3E;
+&#x3C;p class=&#x22;text-md&#x22;&#x3E;Now it is a game, I am going to play.&#x3C;/p&#x3E;
+&#x3C;p&#x3E;Now it is a game, I am going to play.&#x3C;/p&#x3E;
+&#x3C;p class=&#x22;text-sm&#x22;&#x3E;Now it is a game, I am going to play.&#x3C;/p&#x3E;</pre>
           <h4>Formatting</h4>
           <p><u>Such is the earnestness from which I have never been able to depart.</u></p>
           <p class="underline">Such is the earnestness from which I have never been able to depart.</p>
@@ -260,7 +252,7 @@
           <p>There is a certain glibness in calling someone a legend, but if there's any artist worthy of the title it's Barbara Hammer, whose nearly 50-year career has spanned disciplines and broken boundaries, but has focused most especially on moving images. </p>
 
           <h3>Percent-based 12 column grid</h3>
-          <div class="row mb-1 text-lh-lg">
+          <div class="row mb-1">
             <div class="col-sm-2">
               <div class="black-hl text-md text-mono text-700 center">col-2</div>
             </div>
@@ -271,7 +263,7 @@
               <div class="black-hl text-md text-mono text-700 center">col-3</div>
             </div>
           </div>
-          <div class="row mb-1 text-lh-lg">
+          <div class="row mb-1">
             <div class="col-sm-4">
               <div class="black-hl text-md text-mono text-700 center">col-4</div>
             </div>
@@ -282,7 +274,7 @@
               <div class="black-hl text-md text-mono text-700 center">col-4</div>
             </div>
           </div>
-          <div class="row mb-1 text-lh-lg">
+          <div class="row mb-1">
             <div class="col-sm-9">
               <div class="black-hl text-md text-mono text-700 center">col-9</div>
             </div>
@@ -294,7 +286,7 @@
             </div>
           </div>
 
-          <pre class="mb-3">&lt;div class=&quot;row mb-1 text-lh-lg&quot;&gt;
+          <pre class="mb-3">&lt;div class=&quot;row mb-1&quot;&gt;
   &lt;div class=&quot;col-sm-2&quot;&gt;
     &lt;div class=&quot;black-hl text-md text-mono text-700 center&quot;&gt;col-2&lt;/div&gt;
   &lt;/div&gt;
@@ -305,7 +297,7 @@
     &lt;div class=&quot;black-hl text-md text-mono text-700 center&quot;&gt;col-3&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;row mb-1 text-lh-lg&quot;&gt;
+&lt;div class=&quot;row mb-1&quot;&gt;
   &lt;div class=&quot;col-sm-4&quot;&gt;
     &lt;div class=&quot;black-hl text-md text-mono text-700 center&quot;&gt;col-4&lt;/div&gt;
   &lt;/div&gt;
@@ -316,7 +308,7 @@
     &lt;div class=&quot;black-hl text-md text-mono text-700 center&quot;&gt;col-4&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;row mb-1 text-lh-lg&quot;&gt;
+&lt;div class=&quot;row mb-1&quot;&gt;
   &lt;div class=&quot;col-sm-9&quot;&gt;
     &lt;div class=&quot;black-hl text-md text-mono text-700 center&quot;&gt;col-9&lt;/div&gt;
   &lt;/div&gt;
@@ -329,7 +321,7 @@
 &lt;/div&gt;</pre>
 
           <h4 class="mb-2">With breakpoints</h4>
-          <div class="row mb-1 text-lh-lg">
+          <div class="row mb-1">
             <div class="col-sm">
               <div class="black-hl text-md text-mono text-700 center">sm</div>
             </div>
@@ -343,7 +335,7 @@
               <div class="black-hl text-md text-mono text-700 center">sm</div>
             </div>
           </div>
-          <div class="row mb-1 text-lh-lg">
+          <div class="row mb-1">
             <div class="col-md-6 col-lg-4">
               <div class="black-hl text-md text-mono text-700 center">md6, lg4</div>
             </div>
@@ -354,7 +346,7 @@
               <div class="black-hl text-md text-mono text-700 center">md6, lg4</div>
             </div>
           </div>
-          <div class="row text-lh-lg">
+          <div class="row">
             <div class="col-lg-9">
               <div class="black-hl text-md text-mono text-700 center">lg9</div>
             </div>
@@ -363,7 +355,7 @@
             </div>
           </div>
 
-          <pre class="mb-6">&lt;div class=&quot;row mb-1 text-lh-lg&quot;&gt;
+          <pre class="mb-6">&lt;div class=&quot;row mb-1&quot;&gt;
   &lt;div class=&quot;col-sm&quot;&gt;
     &lt;div class=&quot;black-hl text-md text-mono text-700 center&quot;&gt;sm&lt;/div&gt;
   &lt;/div&gt;
@@ -377,7 +369,7 @@
     &lt;div class=&quot;black-hl text-md text-mono text-700 center&quot;&gt;sm&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;row mb-1 text-lh-lg&quot;&gt;
+&lt;div class=&quot;row mb-1&quot;&gt;
   &lt;div class=&quot;col-md-6 col-lg-4&quot;&gt;
     &lt;div class=&quot;black-hl text-md text-mono text-700 center&quot;&gt;md6, lg4&lt;/div&gt;
   &lt;/div&gt;
@@ -388,7 +380,7 @@
     &lt;div class=&quot;black-hl text-md text-mono text-700 center&quot;&gt;md6, lg4&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;row mb-8 text-lh-lg&quot;&gt;
+&lt;div class=&quot;row mb-8&quot;&gt;
   &lt;div class=&quot;col-lg-9&quot;&gt;
     &lt;div class=&quot;black-hl text-md text-mono text-700 center&quot;&gt;lg9&lt;/div&gt;
   &lt;/div&gt;
@@ -432,80 +424,324 @@
 &lt;/div&gt;</pre>
 
           <h3 id="margin">Margin / padding utilities</h3>
-          <p class="mb4">Hammer was raised in Hollywood, California. It wasn't until her early thirties that she left her husband, came out as lesbian, and, inspired by the experimental filmmaker Maya Deren, began making short, scintillating films of her own.</p>
+          <p class="mb-4">Hammer was raised in Hollywood, California. It wasn't until her early thirties that she left her husband, came out as lesbian, and, inspired by the experimental filmmaker Maya Deren, began making short, scintillating films of her own.</p>
 
-          <div class="w-100 black-hl text-md text-mono text-700 center mr-3 p-1 mb-1">mb-1</div>
-          <div class="w-100 black-hl text-md text-mono text-700 center mr-3 p-1 mb-2">mb-2</div>
-          <div class="w-100 black-hl text-md text-mono text-700 center mr-3 p-1 mb-4">mb-4</div>
-          <div class="w-100 black-hl text-md text-mono text-700 center mr-3 p-1 mb-8">mb-8</div>
-          <div class="w-100 black-hl text-md text-mono text-700 center mr-3 p-1 mb-16">mb-16</div>
-          <div class="w-100 black-hl text-md text-mono text-700 center mr-3 p-1 mt-16">mt-16</div>
-          <div class="w-100 black-hl text-md text-mono text-700 center mr-3 p-1 mt-8">mt-8</div>
-          <div class="w-100 black-hl text-md text-mono text-700 center mr-3 p-1 mt-4">mt-4</div>
-          <div class="w-100 black-hl text-md text-mono text-700 center mr-3 p-1 mt-2">mt-2</div>
-          <div class="w-100 black-hl text-md text-mono text-700 center mr-3 p-1 mt-1">mt-1</div>
+          <div class="row">
+            <div class="black-hl text-md text-mono text-700 center mr-3 p-1 mb-1">mb-1</div>
+            <div class="black-hl text-md text-mono text-700 center mr-3 p-1 mb-2">mb-2</div>
+            <div class="black-hl text-md text-mono text-700 center mr-3 p-1 mb-4">mb-4</div>
+            <div class="black-hl text-md text-mono text-700 center mr-3 p-1 mb-8">mb-8</div>
+            <div class="black-hl text-md text-mono text-700 center mr-3 p-1 mb-16">mb-16</div>
+            <div class="black-hl text-md text-mono text-700 center mr-3 p-1 mt-16">mt-16</div>
+            <div class="black-hl text-md text-mono text-700 center mr-3 p-1 mt-8">mt-8</div>
+            <div class="black-hl text-md text-mono text-700 center mr-3 p-1 mt-4">mt-4</div>
+            <div class="black-hl text-md text-mono text-700 center mr-3 p-1 mt-2">mt-2</div>
+            <div class="black-hl text-md text-mono text-700 center mr-3 p-1 mt-1">mt-1</div>
+          </div>
 
+          <pre>&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;black-hl text-md text-mono text-700 center mr-3 p-1 mb-1&quot;&gt;mb-1&lt;/div&gt;
+    &lt;div class=&quot;black-hl text-md text-mono text-700 center mr-3 p-1 mb-2&quot;&gt;mb-2&lt;/div&gt;
+    &lt;div class=&quot;black-hl text-md text-mono text-700 center mr-3 p-1 mb-4&quot;&gt;mb-4&lt;/div&gt;
+    &lt;div class=&quot;black-hl text-md text-mono text-700 center mr-3 p-1 mb-8&quot;&gt;mb-8&lt;/div&gt;
+    &lt;div class=&quot;black-hl text-md text-mono text-700 center mr-3 p-1 mb-16&quot;&gt;mb-16&lt;/div&gt;
+    &lt;div class=&quot;black-hl text-md text-mono text-700 center mr-3 p-1 mt-16&quot;&gt;mt-16&lt;/div&gt;
+    &lt;div class=&quot;black-hl text-md text-mono text-700 center mr-3 p-1 mt-8&quot;&gt;mt-8&lt;/div&gt;
+    &lt;div class=&quot;black-hl text-md text-mono text-700 center mr-3 p-1 mt-4&quot;&gt;mt-4&lt;/div&gt;
+    &lt;div class=&quot;black-hl text-md text-mono text-700 center mr-3 p-1 mt-2&quot;&gt;mt-2&lt;/div&gt;
+    &lt;div class=&quot;black-hl text-md text-mono text-700 center mr-3 p-1 mt-1&quot;&gt;mt-1&lt;/div&gt;
+  &lt;/div&gt;</pre>
+
+          <p>The properties exposed for these utilities are given by the following Sass definitions.</p>
+          <p>Property values 0 - 99 are currently available ($sizing-count == 99)</p>
+
+          <pre>@for $i from 0 through $sizing-count {
+  .w-#{$i} {width: #{$i}rem;} // Example: .w-12: 12rem;
+  .h-#{$i} {height: #{$i}rem;} // Example: .h-12: 12rem;
+  .m-#{$i} {margin: #{$i}rem;} // Example: .m-12: 12rem;
+  .mt-#{$i} {margin-top: #{$i}rem;} // Example: .mt-12: 12rem;
+  .mb-#{$i} {margin-bottom: #{$i}rem;} // Example: .mb-12: 12rem;
+  .ml-#{$i} {margin-left: #{$i}rem;} // Example: .ml-12: 12rem;
+  .mr-#{$i} {margin-right: #{$i}rem;} // Example: .mr-12: 12rem;
+  .p-#{$i} {padding: #{$i}rem;} // Example: .p-12: 12rem;
+  .pt-#{$i} {margin-top: #{$i}rem;} // Example: .pt-12: 12rem;
+  .pb-#{$i} {padding-bottom: #{$i}rem;} // Example: .pb-12: 12rem;
+  .pl-#{$i} {padding-left: #{$i}rem;} // Example: .pl-12: 12rem;
+  .pr-#{$i} {padding-right: #{$i}rem;} // Example: pr-12: 12rem;
+}</pre>
+
+
+          <h3 id="centering" class="mt-12">Vertical / horizontal centering</h3>
+
+          <div class="row">
+            <div class="col-md-6">
+              <p>Use of Flexbox is encouraged.</p>
+              <p>For example, here is how you center an element inside of another element</p>
+            </div>
+            <div class="col-md-4 col-md-offset-2">
+              <div class="w-48 h-48 black-hl text-md row align-vertical justify-center">
+                <div>Center me!</div>
+              </div>
+            </div>
+          </div>
+
+          <pre>&lt;div class=&quot;w-48 h-48 black-hl text-md row align-vertical justify-center&quot;&gt;
+  &lt;div&gt;Center me!&lt;/div&gt;
+&lt;/div&gt;</pre>
         </section>
 
         <section>
-          <h3>Buttons</h3>
-          <button class="btn">Serious action</button>
-          <button class="btn btn-primary">Serious action</button>
-          <button class="btn btn-secondary">Serious action</button>
-          <button class="btn btn-tetiary">Serious action</button>
-          <button class="btn btn-warning">Serious action</button>
+          <h3 id="buttons" class="mt-12">Buttons</h3>
 
-          <h3>Button groups</h3>
-          <div class="btn-group">
-            <button type="button" class="btn btn-secondary active">Active</button>
-            <button type="button" class="btn btn-tetiary">Inactive</button>
+          <p class="mt-2 mb-4">Hammer was raised in Hollywood, California. It wasn't until her early thirties that she left her husband, came out as lesbian, and, inspired by the experimental filmmaker Maya Deren, began making short, scintillating films of her own.</p>
+
+          <div class="row">
+            <button class="btn mr-2">Action</button>
+            <button class="btn mr-2 btn-primary">Action</button>
+            <button class="btn mr-2 btn-secondary">Action</button>
+            <button class="btn mr-2 btn-tetiary">Action</button>
+            <button class="btn mr-2 btn-warning">Serious action</button>
           </div>
-          <div class="btn-group">
-            <button type="button" class="btn btn-secondary">Active</button>
-            <button type="button" class="btn btn-tetiary active">Inactive</button>
+
+          <div class="row">
+            <button class="btn btn-sm mr-2">Action</button>
+            <button class="btn btn-sm mr-2 btn-primary">Action</button>
+            <button class="btn btn-sm mr-2 btn-secondary">Action</button>
+            <button class="btn btn-sm mr-2 btn-tetiary">Action</button>
+            <button class="btn btn-sm mr-2 btn-warning">Serious action</button>
           </div>
-          <h3>Forms</h3>
-          <div class="input-group">
-            <label>Name</label>
-            <input type="text" />
+
+          <pre class="mb-12">&lt;div class=&quot;row&quot;&gt;
+  &lt;button class=&quot;btn mr-2&quot;&gt;Action&lt;/button&gt;
+  &lt;button class=&quot;btn mr-2 btn-primary&quot;&gt;Action&lt;/button&gt;
+  &lt;button class=&quot;btn mr-2 btn-secondary&quot;&gt;Action&lt;/button&gt;
+  &lt;button class=&quot;btn mr-2 btn-tetiary&quot;&gt;Action&lt;/button&gt;
+  &lt;button class=&quot;btn mr-2 btn-warning&quot;&gt;Serious action&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;button class=&quot;btn btn-sm mr-2&quot;&gt;Action&lt;/button&gt;
+  &lt;button class=&quot;btn btn-sm mr-2 btn-primary&quot;&gt;Action&lt;/button&gt;
+  &lt;button class=&quot;btn btn-sm mr-2 btn-secondary&quot;&gt;Action&lt;/button&gt;
+  &lt;button class=&quot;btn btn-sm mr-2 btn-tetiary&quot;&gt;Action&lt;/button&gt;
+  &lt;button class=&quot;btn btn-sm mr-2 btn-warning&quot;&gt;Serious action&lt;/button&gt;
+&lt;/div&gt;</pre>
+
+          <h3 id="forms" class="mt-12">Forms</h3>
+
+          <p class="mt-2 mb-4">Hammer was raised in Hollywood, California. It wasn't until her early thirties that she left her husband, came out as lesbian, and, inspired by the experimental filmmaker Maya Deren, began making short, scintillating films of her own.</p>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="input-group">
+                <label>Name</label>
+                <input type="text" />
+              </div>
+              <div class="input-group error">
+                <label>Age</label>
+                <input type="text" value="John" />
+                <div class="error-label">Age must be a number.</div>
+              </div>
+              <div class="row">
+                <div class="checkbox-group mt-4 col-md-6">
+                  <b>Diet options?</b>
+                  <div class="input-group">
+                    <input type="checkbox" id="vegetarian" />
+                    <label for="vegetarian">Vegetarian</label>
+                  </div>
+                  <div class="input-group">
+                    <input type="checkbox" id="vegan" />
+                    <label for="vegan">Vegan</label>
+                  </div>
+                  <div class="input-group">
+                    <input type="checkbox" id="glutenfree" />
+                    <label for="glutenfree">Gluten-free</label>
+                  </div>
+                </div>
+                <div class="radio-group mt-4 col-md-6">
+                  <b>Favorite food?</b>
+                  <div class="input-group">
+                    <input type="radio" name="favorite-food" id="pizza" />
+                    <label for="pizza">Pizza</label>
+                  </div>
+                  <div class="input-group">
+                    <input type="radio" name="favorite-food" id="salad" />
+                    <label for="salad">Salad</label>
+                  </div>
+                  <div class="input-group">
+                    <input type="radio" name="favorite-food" id="sandwich" />
+                    <label for="sandwich">Sandwich</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7 col-md-offset-1">
+              <div class="input-group">
+                <label>Message</label>
+                <textarea rows="6"></textarea>
+              </div>
+              <div class="input-group mt-8">
+                <label>Favorite sport?</label>
+                <div class="select-dropdown">
+                  <select name="favorite-sport">
+                    <option value="soccer">Soccer</option>
+                    <option value="football">Football</option>
+                    <option value="baseball">Baseball</option>
+                  </select>
+                  <div class="triangle-base triangle-down"></div>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-secondary mt-2 mb-8">Send</button>
           </div>
-          <div class="input-group error">
-            <label>Age</label>
-            <input type="text" value="John" />
-            <div class="error-label">Age must be a number.</div>
-          </div>
-          <div class="input-group">
-            <label>Message</label>
-            <textarea rows="6"></textarea>
-          </div>
-          <button type="submit" class="btn btn-secondary">Send</button>
-          <h3>Icons / Circles</h3>
+
+          <pre>&lt;!-- only subset of forms shown for brevity; inspect source to get full set --&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;
+    &lt;div class=&quot;input-group&quot;&gt;
+      &lt;label&gt;Name&lt;/label&gt;
+      &lt;input type=&quot;text&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;input-group error&quot;&gt;
+      &lt;label&gt;Age&lt;/label&gt;
+      &lt;input type=&quot;text&quot; value=&quot;John&quot; /&gt;
+      &lt;div class=&quot;error-label&quot;&gt;Age must be a number.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-7 col-md-offset-1&quot;&gt;
+    &lt;div class=&quot;input-group&quot;&gt;
+      &lt;label&gt;Message&lt;/label&gt;
+      &lt;textarea rows=&quot;6&quot;&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button type=&quot;submit&quot; class=&quot;btn btn-secondary&quot;&gt;Send&lt;/button&gt;
+&lt;/div&gt;
+          </pre>
+
+          <h3 id="icons" class="mt-12">Icons</h3>
+
+          <p>Icons are roughly text-sized symbols, usually implemented in a font set (currently Work Sans)</p>
+          <p>Two ways to implement icons:</p>
+          <ul>
+            <li>Use Unicode symbol directly in code, wrapped by an &lt;icon&gt; tag</li>
+            <li>Use a predefined "icon-" css class (with additional positioning/styling presets)</li>
+          </ul>
+
           <h3>
-            <icon class="arrow-left"></icon>
-            <icon class="arrow-right"></icon>
+            <icon>↑</icon>
+            <icon class="icon-arrow-up"></icon>
+            <icon>↓</icon>
+            <icon class="icon-arrow-down"></icon>
+            <icon>←</icon>
+            <icon>→</icon>
+            <icon class="icon-arrow-left"></icon>
+            <icon class="icon-arrow-right"></icon>
+            <icon>🅱</icon>
+            <icon>🅰</icon>
           </h3>
+          <h3>
+            <icon class="icon-cross"></icon>
+            <icon class="icon-ellipsis"></icon>
+            <icon>...</icon>
+          </h3>
+
+          <pre>&lt;h3&gt;
+  &lt;icon&gt;&uarr;&lt;/icon&gt;
+  &lt;icon class=&quot;icon-arrow-up&quot;&gt;&lt;/icon&gt;
+  &lt;icon&gt;&darr;&lt;/icon&gt;
+  &lt;icon class=&quot;icon-arrow-down&quot;&gt;&lt;/icon&gt;
+  &lt;icon&gt;&larr;&lt;/icon&gt;
+  &lt;icon&gt;&rarr;&lt;/icon&gt;
+  &lt;icon class=&quot;icon-arrow-left&quot;&gt;&lt;/icon&gt;
+  &lt;icon class=&quot;icon-arrow-right&quot;&gt;&lt;/icon&gt;
+  &lt;icon&gt;🅱&lt;/icon&gt;
+  &lt;icon&gt;🅰&lt;/icon&gt;
+&lt;/h3&gt;
+&lt;h3&gt;
+  &lt;icon class=&quot;icon-cross&quot;&gt;&lt;/icon&gt;
+  &lt;icon class=&quot;icon-ellipsis&quot;&gt;&lt;/icon&gt;
+  &lt;icon&gt;...&lt;/icon&gt;
+&lt;/h3&gt;</pre>
+
+
+          <h3 id="shapes" class="mt-12">Shapes</h3>
+
+          <p>Shapes are CSS-drawn figures that are expandable, dynamic, or impossible to fit into a character set.</p>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="circle"></div>
+              <div class="circle circle-fill"></div>
+              <div class="circle circle-red"></div>
+              <div class="circle circle-pill"></div>
+              <br />
+              <div class="circle circle-lg"></div>
+              <div class="circle circle-lg circle-fill"></div>
+              <div class="circle circle-lg circle-red"></div>
+              <div class="circle circle-lg circle-pill"></div>
+            </div>
+            <div class="col-md-4">
+              <div class="square"></div>
+              <div class="square square-fill"></div>
+              <div class="square square-red"></div>
+              <div class="square square-rect"></div>
+              <br />
+              <div class="square square-lg"></div>
+              <div class="square square-lg square-fill"></div>
+              <div class="square square-lg square-red"></div>
+              <div class="square square-lg square-rect"></div>
+            </div>
+            <div class="col-md-4">
+              <div class="triangle-base triangle-up"></div>
+              <div class="triangle-base triangle-right"></div>
+              <div class="triangle-base triangle-down"></div>
+              <div class="triangle-base triangle-left"></div>
+            </div>
+          </div>
+
+          <pre>&lt;!-- only circles shown for brevity; inspect source to get full set --&gt;
+&lt;div class=&quot;circle&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;circle circle-fill&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;circle circle-red&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;circle circle-pill&quot;&gt;&lt;/div&gt;
+&lt;br /&gt;
+&lt;div class=&quot;circle circle-lg&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;circle circle-lg circle-fill&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;circle circle-lg circle-red&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;circle circle-lg circle-pill&quot;&gt;&lt;/div&gt;</pre>
         </section>
 
-        <section class="mb16">
-          <pre class="code-block"><code class="text-code">
-    ++  watch-dir
-    |=  a/path
-    ^-  (list move)
-    =/  soc/sock
-    [our.hid our.hid]
-    =/  rav/rave
-    [%next %z da+now.hid a]
-    =/  rif/riff
-    [%home [~ rav]]
-    =/  car/card
-    :^
-    %warp
-    a
-    soc
-    rif
-    [[ost.hid car] ~]
+        <section class="mb-16">
+          <h3 class="mt-12">Code blocks</h3>
+
+          <p class="mt-2 mb-4">Hammer was raised in Hollywood, California. It wasn't until her early thirties that she left her husband, came out as lesbian, and, inspired by the experimental filmmaker Maya Deren, began making short, scintillating films of her own.</p>
+
+          <pre class="code-block"><code class="text-code">++  watch-dir
+|=  a/path
+^-  (list move)
+=/  soc/sock
+[our.hid our.hid]
+=/  rav/rave
+[%next %z da+now.hid a]
+=/  rif/riff
+[%home [~ rav]]
+=/  car/card
+:^
+%warp
+a
+soc
+rif
+[[ost.hid car] ~]
           </code></pre>
+
+          <p>(The code for the above is)</p>
+
+          <pre>&lt;pre class=&quot;code-block&quot;&gt;&lt;code class=&quot;text-code&quot;&gt;
+  ...
+&lt;/code&gt;&lt;/pre&gt;</pre>
         </section>
+        <p>===</p>
+        <p class="mb-32">Happy coding!</p>
       </div>
     </article>
   </div>

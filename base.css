@@ -5,8 +5,6 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900");
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900&text=%E2%86%90|%E2%86%92");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -399,6 +397,12 @@ th {
   display: flex;
   flex-wrap: wrap; }
 
+.align-vertical {
+  align-items: center; }
+
+.justify-center {
+  justify-content: center; }
+
 @media only screen and (min-width: 0) {
   .col-sm,
   .col-sm-1,
@@ -687,21 +691,74 @@ th {
   .col-lg-offset-11 {
     margin-left: 91.66666667%; } }
 
+/*
+  Type scale:
+
+  small   :  12px / 16px
+  body(*) :  16px / 24px
+  large/5 :  20px / 28px + (? letter spacing, diff font, bold, uppercase, etc.)
+  4       :  20px / 28px
+  3       :  24px / 32px
+  2       :  36px / 52px
+  1       :  48px / 64px
+
+*/
 /**********************
   Base text styles
 **********************/
+@font-face {
+  font-family: "Work Sans";
+  src: url("https://storage.googleapis.com/media.urbit.org/fonts/WorkSans-Thin.ttf") format("truetype");
+  font-weight: 100; }
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("https://storage.googleapis.com/media.urbit.org/fonts/WorkSans-ExtraLight.ttf") format("truetype");
+  font-weight: 200; }
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("https://storage.googleapis.com/media.urbit.org/fonts/WorkSans-Light.ttf") format("truetype");
+  font-weight: 300; }
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("https://storage.googleapis.com/media.urbit.org/fonts/WorkSans-Regular.ttf") format("truetype");
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("https://storage.googleapis.com/media.urbit.org/fonts/WorkSans-Medium.ttf") format("truetype");
+  font-weight: 500; }
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("https://storage.googleapis.com/media.urbit.org/fonts/WorkSans-SemiBold.ttf") format("truetype");
+  font-weight: 600; }
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("https://storage.googleapis.com/media.urbit.org/fonts/WorkSans-Bold.ttf") format("truetype");
+  font-weight: 700; }
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("https://storage.googleapis.com/media.urbit.org/fonts/WorkSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800; }
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("https://storage.googleapis.com/media.urbit.org/fonts/WorkSans-Black.ttf") format("truetype");
+  font-weight: 900; }
+
 * {
   font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased; }
 
-html {
-  font-size: 6px; }
-
 body {
-  /*font-family: "San Francisco Text", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 3rem;
-  line-height: 5rem;
+  font-size: 4rem;
+  line-height: 6rem;
   color: #373A3C; }
 
 a {
@@ -725,38 +782,50 @@ h5,
 
 h1,
 .h1 {
-  font-size: 10rem;
+  font-size: 12rem;
   font-weight: 600;
-  line-height: 12rem;
+  line-height: 16rem;
   margin: 4rem 0; }
 
 h2,
 .h2 {
-  font-size: 8rem;
+  font-size: 9rem;
   font-weight: 600;
-  line-height: 10rem;
+  line-height: 13rem;
   margin: 3rem 0; }
 
 h3,
 .h3 {
   font-size: 6rem;
   font-weight: 600;
-  line-height: 6rem;
+  line-height: 8rem;
   margin: 2rem 0; }
 
 h4,
 .h4 {
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 600;
-  line-height: 5rem;
+  line-height: 7rem;
   margin: 1rem 0; }
 
 h5,
 .h5 {
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: 500;
-  line-height: 4rem;
+  line-height: 7rem;
   margin: 1rem 0; }
+
+caption, .text-sm {
+  font-size: 3rem;
+  line-height: 5rem; }
+
+.text-md {
+  font-size: 4rem;
+  line-height: 6rem; }
+
+.text-lg {
+  font-size: 5rem;
+  line-height: 7rem; }
 
 /**********************
   Preformatted
@@ -777,33 +846,12 @@ code,
   color: black; }
 
 .code-block {
-  background-color: #F4F4F4;
-  padding: 3rem;
+  background-color: #f1f1f1;
+  padding: 5rem;
   white-space: pre-wrap; }
 
 .code-block .text-code {
   font-weight: 200; }
-
-/**********************
-  Text sizes
-**********************/
-.text-xs {
-  font-size: 1.5rem; }
-
-.text-sm {
-  font-size: 2rem; }
-
-.text-lh-xs {
-  line-height: 2rem; }
-
-.text-lh-sm {
-  line-height: 3rem; }
-
-.text-lh-md {
-  line-height: 6rem; }
-
-.text-lh-lg {
-  line-height: 10rem; }
 
 /**********************
   Formatting
@@ -922,28 +970,39 @@ button {
 button, .btn {
   font-family: "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
-  padding: 6px 12px;
-  color: white;
+  font-size: 4rem;
+  line-height: 4rem;
+  padding: 3rem 6rem;
+  color: black;
   background-color: #D4D4D4;
   margin: 0 0 6px; }
 
+.btn-sm {
+  font-size: 3rem;
+  line-height: 3rem;
+  padding: 2rem 4rem; }
+
 .btn-primary {
-  background-color: #577CFF; }
+  background-color: #577CFF;
+  color: white; }
 
 .btn-secondary {
   background-color: #8FEE9D; }
 
 .btn-tetiary {
-  background-color: #5B5B5B; }
+  background-color: #5B5B5B;
+  color: white; }
 
 .btn-warning {
-  background-color: #FF4444; }
+  background-color: #FF4444;
+  color: white; }
 
 .btn-group .btn {
   display: inline-block; }
 
 .btn-group .btn:not(.active) {
-  background-color: #D4D4D4; }
+  background-color: #D4D4D4;
+  color: black; }
 
 label {
   display: block;
@@ -951,8 +1010,9 @@ label {
 
 textarea,
 input[type="text"] {
-  border: .5rem solid #000;
-  padding: 12px; }
+  border: 2px solid black;
+  padding: 12px;
+  width: 100%; }
 
 .error-label {
   display: none;
@@ -971,11 +1031,64 @@ input[type="text"] {
 .input-group.error .error-label {
   display: block; }
 
-.arrow-right:before {
+.checkbox-group label,
+.checkbox-group input,
+.radio-group label,
+.radio-group input {
+  font-weight: 400;
+  display: inline-block; }
+
+.select-dropdown {
+  display: flex;
+  border: 2px solid black;
+  overflow: hidden;
+  background-color: white; }
+
+.select-dropdown select {
+  padding: 5px 8px;
+  width: 130%;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  -webkit-appearance: none; }
+
+.select-dropdown select:focus {
+  outline: none; }
+
+.select-dropdown .triangle-down {
+  border-width: 2rem 1rem 0rem 1rem;
+  position: relative;
+  top: 14px;
+  right: 8px; }
+
+/*
+  Available/supported icons:
+
+  →
+  ←
+  ∙
+
+*/
+.icon-arrow-right:before {
   content: "→"; }
 
-.arrow-left:before {
+.icon-arrow-left:before {
   content: "←"; }
+
+.icon-arrow-up:before {
+  content: "↑"; }
+
+.icon-arrow-down:before {
+  content: "↓"; }
+
+.icon-cross:before {
+  content: "×"; }
+
+.icon-ellipsis:before {
+  content: "...";
+  position: relative;
+  bottom: 6px; }
 
 .selected:before {
   content: "∙"; }
@@ -1004,6 +1117,116 @@ input[type="text"] {
   border: 12.0006px solid transparent;
   border-bottom: 18px solid #000;
   border-top: 0 solid transparent; }
+
+/**********************
+  Shapes
+**********************/
+.circle {
+  display: inline-block;
+  padding: 2rem;
+  border-radius: 50%;
+  border: 2px solid black;
+  text-align: center; }
+
+.circle-sm {
+  padding: 1rem; }
+
+.circle-lg {
+  padding: 4rem; }
+
+.circle-fill {
+  background-color: black; }
+
+.circle-red {
+  background-color: red;
+  border-color: red; }
+
+.circle-pill {
+  border-radius: 9999px;
+  width: 10rem; }
+
+.circle-pill.circle-lg {
+  width: 20rem; }
+
+.square {
+  display: inline-block;
+  padding: 2rem;
+  border: 2px solid black;
+  text-align: center; }
+
+.square-sm {
+  padding: 1rem; }
+
+.square-lg {
+  padding: 4rem; }
+
+.square-fill {
+  background-color: black; }
+
+.square-red {
+  background-color: red;
+  border-color: red; }
+
+.square-rect {
+  width: 10rem; }
+
+.square-rect.square-lg {
+  width: 20rem; }
+
+.triangle-base {
+  display: inline-block;
+  width: 0;
+  height: 0; }
+
+.triangle-up {
+  border-left: 2rem solid transparent;
+  border-right: 2rem solid transparent;
+  border-bottom: 4rem solid black; }
+
+.triangle-down {
+  border-left: 2rem solid transparent;
+  border-right: 2rem solid transparent;
+  border-top: 4rem solid black; }
+
+.triangle-right {
+  border-top: 2rem solid transparent;
+  border-bottom: 2rem solid transparent;
+  border-left: 4rem solid black; }
+
+.triangle-left {
+  border-top: 2rem solid transparent;
+  border-bottom: 2rem solid transparent;
+  border-right: 4rem solid black; }
+
+/**********************
+  Urbit logo
+**********************/
+.urbit-logo {
+  width: 72px;
+  height: 72px;
+  display: inline-block;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 5px solid white;
+  background-color: transparent; }
+  .urbit-logo:before {
+    content: "~";
+    color: #FFFFFF;
+    font-size: 72px;
+    vertical-align: middle;
+    line-height: 54px;
+    text-align: center;
+    width: 2rem;
+    display: inline-block;
+    font-family: "Work Sans";
+    font-weight: 600;
+    margin-right: 30px;
+    margin-top: 3px; }
+
+.urbit-logo-solid {
+  border-color: black; }
+  .urbit-logo-solid:before {
+    color: black; }
 
 /**********************
   Base elements
@@ -1067,53 +1290,6 @@ ol > li:before {
   display: inline-block;
   width: 6rem;
   text-align: left; }
-
-/**********************
-  Shapes
-**********************/
-.circle {
-  display: inline-block;
-  padding: 1rem;
-  border-radius: 50%;
-  border: 3px solid black;
-  text-align: center; }
-
-.pill {
-  display: inline-block;
-  padding: 1rem;
-  border-radius: 9999px;
-  border: 3px solid black;
-  text-align: center; }
-
-/**********************
-  Urbit logo
-**********************/
-.urbit-logo {
-  width: 72px;
-  height: 72px;
-  display: inline-block;
-  border-radius: 50%;
-  vertical-align: middle;
-  border: 5px solid white;
-  background-color: transparent; }
-  .urbit-logo:before {
-    content: "~";
-    color: #FFFFFF;
-    font-size: 72px;
-    vertical-align: middle;
-    line-height: 54px;
-    text-align: center;
-    width: 2rem;
-    display: inline-block;
-    font-family: "Work Sans";
-    font-weight: 600;
-    margin-right: 30px;
-    margin-top: 3px; }
-
-.urbit-logo-solid {
-  border-color: black; }
-  .urbit-logo-solid:before {
-    color: black; }
 
 /**********************
   Utility classes
@@ -4720,3 +4896,6 @@ ol > li:before {
 
 * {
   box-sizing: border-box; }
+
+html {
+  font-size: 4px; }

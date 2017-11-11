@@ -12,16 +12,25 @@ button {
 button, .btn {
   font-family: "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
+  font-size: 4rem;
+  line-height: 4rem;
 
-  padding: 6px 12px;
-  color: white;
+  padding: 3rem 6rem;
+  color: black;
   background-color: $gray-light;
 
   margin: 0 0 6px;
 }
 
+.btn-sm {
+  font-size: 3rem;
+  line-height: 3rem;
+  padding: 2rem 4rem;
+}
+
 .btn-primary {
   background-color: $blue;
+  color: white;
 }
 
 .btn-secondary {
@@ -30,10 +39,12 @@ button, .btn {
 
 .btn-tetiary {
   background-color: $gray;
+  color: white;
 }
 
 .btn-warning {
   background-color: $red;
+  color: white;
 }
 
 .btn-group {
@@ -43,5 +54,6 @@ button, .btn {
 
   .btn:not(.active) {
     background-color: $gray-light;
+    color: black;
   }
 }

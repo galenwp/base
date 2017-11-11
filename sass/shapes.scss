@@ -1,0 +1,142 @@
+/**********************
+  Shapes
+**********************/
+
+.circle {
+  display: inline-block;
+  padding: 2rem;
+  border-radius: 50%;
+  border: 2px solid black;
+
+  text-align: center;
+}
+
+.circle-sm {
+  padding: 1rem;
+}
+
+.circle-lg {
+  padding: 4rem;
+}
+
+.circle-fill {
+  background-color: black;
+}
+
+.circle-red {
+  background-color: red;
+  border-color: red;
+}
+
+.circle-pill {
+  border-radius: 9999px;
+  width: 10rem;
+}
+
+.circle-pill.circle-lg {
+  width: 20rem;
+}
+
+.square {
+  display: inline-block;
+  padding: 2rem;
+  border: 2px solid black;
+
+  text-align: center;
+}
+
+.square-sm {
+  padding: 1rem;
+}
+
+.square-lg {
+  padding: 4rem;
+}
+
+.square-fill {
+  background-color: black;
+}
+
+.square-red {
+  background-color: red;
+  border-color: red;
+}
+
+.square-rect {
+  width: 10rem;
+}
+
+.square-rect.square-lg {
+  width: 20rem;
+}
+
+.triangle-base {
+  display: inline-block;
+
+  width: 0;
+  height: 0;
+}
+
+.triangle-up {
+  border-left: 2rem solid transparent;
+  border-right: 2rem solid transparent;
+  border-bottom: 4rem solid black;
+}
+
+.triangle-down {
+  border-left: 2rem solid transparent;
+  border-right: 2rem solid transparent;
+  border-top: 4rem solid black;
+}
+
+.triangle-right {
+  border-top: 2rem solid transparent;
+  border-bottom: 2rem solid transparent;
+  border-left: 4rem solid black;
+}
+
+.triangle-left {
+  border-top: 2rem solid transparent;
+  border-bottom: 2rem solid transparent;
+  border-right: 4rem solid black;
+}
+
+/**********************
+  Urbit logo
+**********************/
+
+.urbit-logo {
+  width: 72px;
+  height: 72px;
+  display: inline-block;
+  border-radius: 50%;
+  vertical-align: middle;
+
+  border: 5px solid white;
+  background-color: transparent;
+
+  &:before {
+    content: "~";
+    color: #FFFFFF;
+    font-size: 72px;
+    vertical-align: middle;
+    line-height: 54px;
+    text-align: center;
+    width: 2rem;
+    display: inline-block;
+
+    font-family: "Work Sans";
+    font-weight: 600;
+
+    margin-right: 30px;
+    margin-top: 3px;
+  }
+}
+
+.urbit-logo-solid {
+  border-color: black;
+
+  &:before {
+    color: black;
+  }
+}
