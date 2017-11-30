@@ -14,7 +14,7 @@ $sizing-count: 99;
   .ml-#{$i} {margin-left: #{$i}rem;} // Example: .ml-12: 12rem;
   .mr-#{$i} {margin-right: #{$i}rem;} // Example: .mr-12: 12rem;
   .p-#{$i} {padding: #{$i}rem;} // Example: .p-12: 12rem;
-  .pt-#{$i} {margin-top: #{$i}rem;} // Example: .pt-12: 12rem;
+  .pt-#{$i} {padding-top: #{$i}rem;} // Example: .pt-12: 12rem;
   .pb-#{$i} {padding-bottom: #{$i}rem;} // Example: .pb-12: 12rem;
   .pl-#{$i} {padding-left: #{$i}rem;} // Example: .pl-12: 12rem;
   .pr-#{$i} {padding-right: #{$i}rem;} // Example: pr-12: 12rem;
