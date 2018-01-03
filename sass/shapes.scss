@@ -1,3 +1,5 @@
+@import "colors";
+
 /**********************
   Shapes
 **********************/
@@ -24,8 +26,28 @@
 }
 
 .circle-red {
-  background-color: red;
-  border-color: red;
+  background-color: $red;
+  border-color: $red;
+}
+
+.circle-blue {
+  background-color: $blue;
+  border-color: $blue;
+}
+
+.circle-blue-light {
+  background-color: $blue-light;
+  border-color: $blue-light;
+}
+
+.circle-yellow {
+  background-color: $yellow;
+  border-color: $yellow;
+}
+
+.circle-green {
+  background-color: $green;
+  border-color: $green;
 }
 
 .circle-pill {

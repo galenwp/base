@@ -896,13 +896,13 @@ b, .text-700 {
   Colors
 **********************/
 .blue {
-  color: #577CFF; }
+  color: #4330FC; }
 
 .green {
-  color: #8FEE9D; }
+  color: #6FDC74; }
 
 .red {
-  color: #FF4444; }
+  color: #EE3124; }
 
 .gray-lighter {
   color: #f1f1f1; }
@@ -917,15 +917,15 @@ b, .text-700 {
   color: #373A3C; }
 
 .blue-hl {
-  background-color: #577CFF;
+  background-color: #4330FC;
   color: #fff; }
 
 .green-hl {
-  background-color: #8FEE9D;
+  background-color: #6FDC74;
   color: #fff; }
 
 .red-hl {
-  background-color: #FF4444;
+  background-color: #EE3124;
   color: #fff; }
 
 .gray-lighter-hl {
@@ -983,18 +983,18 @@ button, .btn {
   padding: 2rem 4rem; }
 
 .btn-primary {
-  background-color: #577CFF;
+  background-color: #4330FC;
   color: white; }
 
 .btn-secondary {
-  background-color: #8FEE9D; }
+  background-color: #6FDC74; }
 
 .btn-tetiary {
   background-color: #5B5B5B;
   color: white; }
 
 .btn-warning {
-  background-color: #FF4444;
+  background-color: #EE3124;
   color: white; }
 
 .btn-group .btn {
@@ -1138,8 +1138,24 @@ input[type="text"] {
   background-color: black; }
 
 .circle-red {
-  background-color: red;
-  border-color: red; }
+  background-color: #EE3124;
+  border-color: #EE3124; }
+
+.circle-blue {
+  background-color: #4330FC;
+  border-color: #4330FC; }
+
+.circle-blue-light {
+  background-color: #A4D8E8;
+  border-color: #A4D8E8; }
+
+.circle-yellow {
+  background-color: #FFC440;
+  border-color: #FFC440; }
+
+.circle-green {
+  background-color: #6FDC74;
+  border-color: #6FDC74; }
 
 .circle-pill {
   border-radius: 9999px;
