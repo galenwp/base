@@ -12,5 +12,6 @@
     "watch": "npm run build && node-sass-chokidar -w -o ./ sass/base.scss base.css",
     "host": "node node_modules/simple-autoreload-server/bin/autoreload",
     "serve": "npm-run-all -p watch host"
-  }
+  },
+  "devDependencies": {}
 }
